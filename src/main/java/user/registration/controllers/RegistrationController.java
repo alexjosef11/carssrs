@@ -20,6 +20,8 @@ import java.io.IOException;
 
 public class RegistrationController {
 
+    private double xOffset = 0;
+    private double yOffset = 0;
     @FXML
     private Text registrationMessage;
     @FXML
@@ -77,13 +79,38 @@ public class RegistrationController {
     }
     public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
         Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
-        Scene adminpinscene = new Scene(rolechoose, 600, 500);
+        Scene adminpinscene = new Scene(rolechoose, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(adminpinscene);
+        rolechoose.setOnMousePressed(event -> {
+            xOffset = event.getSceneX();
+            yOffset = event.getSceneY();
+        });
+        rolechoose.setOnMouseDragged(event -> {
+            window.setX(event.getScreenX() - xOffset);
+            window.setY(event.getScreenY() - yOffset);
+            window.setOpacity(0.8f);
+        });
+        rolechoose.setOnDragDone(event -> {
+            window.setOpacity(1.0f);
+        });
+        rolechoose.setOnMouseReleased(event -> {
+            window.setOpacity(1.0f);
+        });
         window.show();
     }
     public void setRole(String role){
         this.roleField.setText(role);
+    }
+
+    public void minimizeWindow(javafx.event.ActionEvent min) {
+        Stage window = (Stage) ((Node)min.getSource()).getScene().getWindow();
+        window.setIconified(true);
+    }
+
+    public void closeWindow(javafx.event.ActionEvent close) {
+        Stage window = (Stage) ((Node)close.getSource()).getScene().getWindow();
+        window.close();
     }
 }
 

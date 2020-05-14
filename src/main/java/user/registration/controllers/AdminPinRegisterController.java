@@ -14,7 +14,8 @@ import java.io.IOException;
 
 
 public class AdminPinRegisterController {
-
+    private double xOffset = 0;
+    private double yOffset = 0;
     @FXML
     public PasswordField passwordconfirmField;
     @FXML
@@ -23,9 +24,23 @@ public class AdminPinRegisterController {
     @FXML
     public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
         Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
-        Scene adminpinscene = new Scene(rolechoose, 600, 500);
-
+        Scene adminpinscene = new Scene(rolechoose, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
+        rolechoose.setOnMousePressed(event -> {
+            xOffset = event.getSceneX();
+            yOffset = event.getSceneY();
+        });
+        rolechoose.setOnMouseDragged(event -> {
+            window.setX(event.getScreenX() - xOffset);
+            window.setY(event.getScreenY() - yOffset);
+            window.setOpacity(0.8f);
+        });
+        rolechoose.setOnDragDone(event -> {
+            window.setOpacity(1.0f);
+        });
+        rolechoose.setOnMouseReleased(event -> {
+            window.setOpacity(1.0f);
+        });
         window.setScene(adminpinscene);
         window.show();
     }
@@ -38,8 +53,23 @@ public class AdminPinRegisterController {
             Parent viewuserregistration = Loader.load();
             RegistrationController registrationController  = Loader.getController();
             registrationController.setRole("Application Owner");
-            Scene clientregisterscene = new Scene(viewuserregistration, 600, 500);
+            Scene clientregisterscene = new Scene(viewuserregistration, 650, 465);
             Stage window = (Stage) ((Node)client.getSource()).getScene().getWindow();
+            viewuserregistration.setOnMousePressed(event -> {
+                xOffset = event.getSceneX();
+                yOffset = event.getSceneY();
+            });
+            viewuserregistration.setOnMouseDragged(event -> {
+                window.setX(event.getScreenX() - xOffset);
+                window.setY(event.getScreenY() - yOffset);
+                window.setOpacity(0.8f);
+            });
+            viewuserregistration.setOnDragDone(event -> {
+                window.setOpacity(1.0f);
+            });
+            viewuserregistration.setOnMouseReleased(event -> {
+                window.setOpacity(1.0f);
+            });
             window.setScene(clientregisterscene);
             window.show();
         }
@@ -54,5 +84,15 @@ public class AdminPinRegisterController {
             PinMessage.setText("Pin is not correct!");
                 throw new PinIncorrectException();
         }
+    }
+
+    public void minimizeWindow(javafx.event.ActionEvent min) {
+        Stage window = (Stage) ((Node)min.getSource()).getScene().getWindow();
+        window.setIconified(true);
+    }
+
+    public void closeWindow(javafx.event.ActionEvent close) {
+        Stage window = (Stage) ((Node)close.getSource()).getScene().getWindow();
+        window.close();
     }
 }

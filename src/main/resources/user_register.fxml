@@ -1,81 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="center" hgap="10" prefHeight="534.0" prefWidth="479.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.RegistrationController">
-    <padding>
-        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
-    </padding>
-    <Text id="title-text" text="CARS SR&amp;S" wrappingWidth="65.541015625" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-
-    <Label text="*Username:" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-    <TextField fx:id="usernameField" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-
-    <Label text="*Password:" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-    <PasswordField fx:id="passwordField" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-
-    <Label text="*Role:" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-    <TextField fx:id="roleField" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-    
-    <Label text="*Confirm Password:" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-    <PasswordField fx:id="passwordconfirmField" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-
-    <Label text="*First Name:" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-    <TextField fx:id="firstnameField" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-
-    <Label text="*Second Name:" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-    <TextField fx:id="secondnameField" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-
-    <Label text="*Phone Number:" GridPane.columnIndex="3" GridPane.rowIndex="8" />
-    <TextField fx:id="phonenumberField" GridPane.columnIndex="4" GridPane.rowIndex="8" />
-
-    <Label text="Adress:" GridPane.columnIndex="3" GridPane.rowIndex="9" />
-    <TextField fx:id="addressField" GridPane.columnIndex="4" GridPane.rowIndex="9" />
-
-    <Label text="Profile Picture:" GridPane.columnIndex="3" GridPane.rowIndex="10" />
-
-    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="4" GridPane.rowIndex="12">
-        <Button onAction="#handleRegisterAction" text="Register" />
-    </HBox>
-
-    <Label text="*Must complete" GridPane.columnIndex="3" GridPane.rowIndex="14" />
-
-    <Text fx:id="registrationMessage" GridPane.columnIndex="4" GridPane.rowIndex="15" />
-   <Button mnemonicParsing="false" onAction="#goBackToRoleChooseScene" prefHeight="16.0" prefWidth="66.0" text="Back" GridPane.rowIndex="12" />
-
-
-    <columnConstraints>
-        <ColumnConstraints />
-        <ColumnConstraints />
-        <ColumnConstraints />
-        <ColumnConstraints />
-      <ColumnConstraints />
-    </columnConstraints>
-    <rowConstraints>
-        <RowConstraints />
-        <RowConstraints />
-        <RowConstraints />
-        <RowConstraints />
-        <RowConstraints />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" />
-        <RowConstraints />
-        <RowConstraints />
-        <RowConstraints />
-        <RowConstraints />
-        <RowConstraints />
-    </rowConstraints>
-</GridPane>
+<AnchorPane prefHeight="465.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.241" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.RegistrationController">
+    <children>
+        <Pane prefHeight="465.0" prefWidth="131.0" style="-fx-background-color: #5985ff;">
+            <children>
+                <ImageView fitHeight="176.0" fitWidth="246.0" layoutX="-29.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Logo.png" />
+                    </image>
+                </ImageView>
+                <Button layoutY="424.0" mnemonicParsing="false" onAction="#goBackToRoleChooseScene" style="-fx-background-color: transparent;" text="Back" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold Italic" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <TextField alignment="BOTTOM_CENTER" editable="false" layoutX="143.0" layoutY="14.0" mouseTransparent="true" prefHeight="35.0" prefWidth="182.0" promptText="Enter specific PIN for Application Owner" style="-fx-background-color: transparent; -fx-border-color: #5985ff; -fx-border-width: 0px 0px 2px 0px;" text="Registration Details">
+            <font>
+                <Font name="Calibri Italic" size="18.0" />
+            </font>
+            <effect>
+                <Blend />
+            </effect>
+        </TextField>
+        <HBox alignment="TOP_RIGHT" layoutX="450.0" prefHeight="35.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="minimizeField" contentDisplay="TOP" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="24.0" prefWidth="35.0" style="-fx-background-color: transparent;" text="...." textFill="#5985ff">
+                    <font>
+                        <Font name="System Bold" size="11.0" />
+                    </font>
+                </Button>
+                <Button fx:id="closeField" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#closeWindow" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: transparent;" text="X" textAlignment="CENTER" textFill="#5985ff" textOverrun="CLIP">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <TextField fx:id="roleField" editable="false" layoutX="325.0" layoutY="19.0" mouseTransparent="true" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px;">
+            <font>
+                <Font name="Calibri Bold Italic" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="usernameField" alignment="TOP_LEFT" layoutX="157.0" layoutY="100.0" prefHeight="29.0" prefWidth="256.0" promptText="*Username" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="passwordField" layoutX="157.0" layoutY="146.0" prefHeight="29.0" prefWidth="256.0" promptText="*Password" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </PasswordField>
+        <PasswordField fx:id="passwordconfirmField" layoutX="157.0" layoutY="189.0" prefHeight="29.0" prefWidth="256.0" promptText="*Confirm password" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </PasswordField>
+        <TextField fx:id="firstnameField" layoutX="153.0" layoutY="262.0" prefHeight="29.0" prefWidth="212.0" promptText="*First Name" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="secondnameField" layoutX="388.0" layoutY="263.0" prefHeight="27.0" prefWidth="238.0" promptText="*Second Name" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField alignment="TOP_RIGHT" editable="false" layoutX="143.0" layoutY="56.0" mouseTransparent="true" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #A9A9A9;" text="Accont information">
+            <font>
+                <Font name="Calibri Bold Italic" size="13.0" />
+            </font>
+        </TextField>
+        <TextField alignment="TOP_RIGHT" editable="false" layoutX="143.0" layoutY="218.0" mouseTransparent="true" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #A9A9A9;" text="Personal information">
+            <font>
+                <Font name="Calibri Bold Italic" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="phonenumberField" alignment="TOP_LEFT" layoutX="153.0" layoutY="319.0" prefHeight="27.0" prefWidth="212.0" promptText="*Phone Number" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="addressField" alignment="TOP_LEFT" layoutX="387.0" layoutY="319.0" prefHeight="27.0" prefWidth="238.0" promptText="Adress :" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <Text fx:id="registrationMessage" fill="RED" layoutX="153.0" layoutY="367.0" wrappingWidth="394.0">
+            <font>
+                <Font name="Calibri Bold Italic" size="12.0" />
+            </font>
+        </Text>
+        <Button layoutX="550.0" layoutY="371.0" onAction="#handleRegisterAction" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #5895ff;" text="Register" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold Italic" size="15.0" />
+            </font>
+        </Button>
+        <TextField editable="false" layoutX="137.0" layoutY="401.0" mouseTransparent="true" prefHeight="27.0" prefWidth="224.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px;" text="You must complete all fields marked with *">
+            <font>
+                <Font name="Calibri Bold Italic" size="10.0" />
+            </font>
+        </TextField>
+        <TextField editable="false" layoutX="136.0" layoutY="414.0" mouseTransparent="true" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px;" text="Password must contain at least 8 characters of which at least one uppercase, one digit and one special character ">
+            <font>
+                <Font name="Calibri Bold Italic" size="10.5" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>
