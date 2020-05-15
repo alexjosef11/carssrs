@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="[CSRS-30] Sign up interface done.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/buttonstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AdminPinRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AdminPinRegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/ChooseRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/ChooseRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/admin_pin_register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin_pin_register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/buttonstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/buttonstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/role_choose_register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/role_choose_register.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/user_register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/user_register.fxml" afterDir="false" />
     </list>
@@ -82,6 +78,7 @@
       <list>
         <option value="CSS File" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -247,7 +244,8 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1589401602901" duration="6383000" />
-      <workItem from="1589462882838" duration="4149000" />
+      <workItem from="1589462882838" duration="4806000" />
+      <workItem from="1589541820208" duration="2937000" />
     </task>
     <task id="LOCAL-00001" summary="[CSRS-10] Added simple registration for user.">
       <created>1589145873688</created>
@@ -263,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589230356897</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[CSRS-30] Sign up interface done.">
+      <created>1589474926556</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589474926556</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,22 +319,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="452" y="110" width="440" height="510" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589403605455" />
-    <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1589474884215">
+    <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1589544585477">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589474884215" />
-    <state width="1323" height="125" key="GridCell.Tab.0.center" timestamp="1589474884214">
+    <state width="1323" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589544585477" />
+    <state width="1323" height="125" key="GridCell.Tab.0.center" timestamp="1589544585477">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="125" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589474884214" />
-    <state width="1323" height="125" key="GridCell.Tab.0.left" timestamp="1589474884214">
+    <state width="1323" height="125" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589544585477" />
+    <state width="1323" height="125" key="GridCell.Tab.0.left" timestamp="1589544585477">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="125" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589474884214" />
-    <state width="1323" height="125" key="GridCell.Tab.0.right" timestamp="1589474884215">
+    <state width="1323" height="125" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589544585477" />
+    <state width="1323" height="125" key="GridCell.Tab.0.right" timestamp="1589544585477">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="125" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589474884215" />
+    <state width="1323" height="125" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589544585477" />
     <state width="1323" height="128" key="GridCell.Tab.1.bottom" timestamp="1589163788110">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -350,10 +355,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="56" y="18" width="916" height="710" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589231407027" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1589230374211">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1589474946744">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589230374211" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589474946744" />
     <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589154007697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -13,7 +13,7 @@ import user.registration.exceptions.PinIncorrectException;
 import java.io.IOException;
 
 
-public class AdminPinRegisterController {
+public class AdminPinRegisterController{
     private double xOffset = 0;
     private double yOffset = 0;
     @FXML
