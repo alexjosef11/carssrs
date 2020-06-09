@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.RegistrationController">
+    <children>
+        <Pane prefHeight="465.0" prefWidth="131.0" style="-fx-background-color: #5985ff;">
+            <children>
+                <ImageView fitHeight="176.0" fitWidth="246.0" layoutX="-29.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Logo.png" />
+                    </image>
+                </ImageView>
+                <Button layoutY="424.0" mnemonicParsing="false" onAction="#goBackToRoleChooseScene" style="-fx-background-color: transparent;" styleClass="back-next-button" stylesheets="@buttonstyle.css" text="Back" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold Italic" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <TextField alignment="BOTTOM_CENTER" editable="false" layoutX="143.0" layoutY="14.0" mouseTransparent="true" prefHeight="35.0" prefWidth="182.0" promptText="Enter specific PIN for Application Owner" style="-fx-background-color: transparent; -fx-border-color: #5985ff; -fx-border-width: 0px 0px 2px 0px;" text="Registration Details">
+            <font>
+                <Font name="Calibri Italic" size="18.0" />
+            </font>
+            <effect>
+                <Blend />
+            </effect>
+        </TextField>
+        <HBox alignment="TOP_RIGHT" layoutX="450.0" prefHeight="35.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="minimizeField" contentDisplay="TOP" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="24.0" prefWidth="35.0" style="-fx-background-color: transparent;" text="...." textFill="#5985ff">
+                    <font>
+                        <Font name="System Bold" size="11.0" />
+                    </font>
+                </Button>
+                <Button fx:id="closeField" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#closeWindow" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: transparent;" text="X" textAlignment="CENTER" textFill="#5985ff" textOverrun="CLIP">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <TextField fx:id="roleField" editable="false" layoutX="325.0" layoutY="19.0" mouseTransparent="true" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px;">
+            <font>
+                <Font name="Calibri Bold Italic" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="usernameField" alignment="TOP_LEFT" layoutX="157.0" layoutY="100.0" prefHeight="29.0" prefWidth="256.0" promptText="*Username" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="passwordField" layoutX="157.0" layoutY="146.0" prefHeight="29.0" prefWidth="256.0" promptText="*Password" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </PasswordField>
+        <PasswordField fx:id="passwordconfirmField" layoutX="157.0" layoutY="189.0" prefHeight="29.0" prefWidth="256.0" promptText="*Confirm password" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </PasswordField>
+        <TextField fx:id="firstnameField" layoutX="153.0" layoutY="262.0" prefHeight="29.0" prefWidth="212.0" promptText="*First Name" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="secondnameField" layoutX="388.0" layoutY="263.0" prefHeight="27.0" prefWidth="238.0" promptText="*Second Name" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField alignment="TOP_RIGHT" editable="false" layoutX="143.0" layoutY="56.0" mouseTransparent="true" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #A9A9A9;" text="Accont information">
+            <font>
+                <Font name="Calibri Bold Italic" size="13.0" />
+            </font>
+        </TextField>
+        <TextField alignment="TOP_RIGHT" editable="false" layoutX="143.0" layoutY="218.0" mouseTransparent="true" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #A9A9A9;" text="Personal information">
+            <font>
+                <Font name="Calibri Bold Italic" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="phonenumberField" alignment="TOP_LEFT" layoutX="153.0" layoutY="319.0" prefHeight="27.0" prefWidth="212.0" promptText="*Phone Number" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="addressField" alignment="TOP_LEFT" layoutX="387.0" layoutY="319.0" prefHeight="27.0" prefWidth="238.0" promptText="Adress :" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <Text fx:id="registrationMessage" fill="RED" layoutX="153.0" layoutY="367.0" wrappingWidth="394.0">
+            <font>
+                <Font name="Calibri Bold Italic" size="12.0" />
+            </font>
+        </Text>
+        <Button layoutX="550.0" layoutY="371.0" onAction="#handleRegisterAction" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #5895ff;" styleClass="register-button" stylesheets="@buttonstyle.css" text="Register" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold Italic" size="15.0" />
+            </font>
+        </Button>
+        <TextField editable="false" layoutX="137.0" layoutY="401.0" mouseTransparent="true" prefHeight="27.0" prefWidth="224.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px;" text="You must complete all fields marked with *">
+            <font>
+                <Font name="Calibri Bold Italic" size="10.0" />
+            </font>
+        </TextField>
+        <TextField editable="false" layoutX="136.0" layoutY="414.0" mouseTransparent="true" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px;" text="Password must contain at least 8 characters of which at least one uppercase, one digit and one special character ">
+            <font>
+                <Font name="Calibri Bold Italic" size="10.5" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>

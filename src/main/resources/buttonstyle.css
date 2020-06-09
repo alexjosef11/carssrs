@@ -1,0 +1,14 @@
+.choose-role-button:hover {
+    -fx-background-color: #5985ff!important;
+    -fx-text-fill: white;
+}
+.back-next-button:hover {
+    -fx-background-color: white!important;
+    -fx-text-fill: #5985ff;
+}
+.register-button:hover {
+    -fx-background-color: white!important;
+    -fx-text-fill: #5985ff;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-color: #5985ff;
+}

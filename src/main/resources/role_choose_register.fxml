@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="applicationowner" prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.ChooseRoleController">
+   <children>
+      <Button fx:id="goToApplicationOwnerPin" contentDisplay="CENTER" layoutX="178.0" layoutY="210.0" onAction="#goToPinAdminScene" pickOnBounds="false" prefHeight="70.0" prefWidth="158.0" style="-fx-border-color: #5985ff; -fx-background-color: transparent; -fx-border-width: 2px 2px 2px 2px;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Application Owner" textAlignment="RIGHT" textFill="#00000099">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font></Button>
+      <TextField alignment="BOTTOM_CENTER" editable="false" layoutX="218.0" layoutY="55.0" mouseTransparent="true" prefHeight="60.0" prefWidth="339.0" promptText="Choose your role into application" style="-fx-background-color: transparent; -fx-border-color: #5985ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <Button fx:id="goToUserRegister" layoutX="450.0" layoutY="210.0" onAction="#goToUserRegisterScene" prefHeight="70.0" prefWidth="158.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Client" textFill="#00000099">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font></Button>
+      <Pane prefHeight="465.0" prefWidth="131.0" style="-fx-background-color: #5985ff;">
+         <children>
+            <ImageView fitHeight="176.0" fitWidth="246.0" layoutX="-29.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Logo.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <TextField alignment="CENTER" editable="false" layoutX="145.0" layoutY="272.0" prefHeight="60.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Choose this role ONLY if you work for CSR&amp;S.">
+         <font>
+            <Font name="Calibri Italic" size="10.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <HBox alignment="TOP_RIGHT" layoutX="450.0" layoutY="-3.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="minimizeField" contentDisplay="TOP" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="24.0" prefWidth="35.0" style="-fx-background-color: transparent;" text="...." textFill="#5985ff">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="closeField" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#closeWindow" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: transparent;" text="X" textAlignment="CENTER" textFill="#5985ff" textOverrun="CLIP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
