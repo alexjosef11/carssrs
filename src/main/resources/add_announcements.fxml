@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.AddAnnouncementsController">
+    <children>
+        <Pane prefHeight="465.0" prefWidth="131.0" style="-fx-background-color: #5985ff;">
+            <children>
+                <ImageView fitHeight="176.0" fitWidth="246.0" layoutX="-29.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Logo.png" />
+                    </image>
+                </ImageView>
+                <Button layoutY="424.0" mnemonicParsing="false" onAction="#backtosomething" style="-fx-background-color: transparent;" styleClass="back-next-button" stylesheets="@buttonstyle.css" text="Back" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold Italic" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <TextField alignment="BOTTOM_CENTER" editable="false" layoutX="138.0" layoutY="14.0" mouseTransparent="true" prefHeight="36.0" prefWidth="224.0" promptText="Enter specific PIN for Application Owner" style="-fx-background-color: transparent; -fx-border-color: #5985ff; -fx-border-width: 0px 0px 2px 0px;" text="Announcements Details">
+            <font>
+                <Font name="Calibri Italic" size="18.0" />
+            </font>
+            <effect>
+                <Blend />
+            </effect>
+        </TextField>
+        <HBox alignment="TOP_RIGHT" layoutX="450.0" prefHeight="35.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="minimizeField" contentDisplay="TOP" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="24.0" prefWidth="35.0" style="-fx-background-color: transparent;" text="...." textFill="#5985ff">
+                    <font>
+                        <Font name="System Bold" size="11.0" />
+                    </font>
+                </Button>
+                <Button fx:id="closeField" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#closeWindow" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: transparent;" text="X" textAlignment="CENTER" textFill="#5985ff" textOverrun="CLIP">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <TextField fx:id="makeField" alignment="TOP_LEFT" layoutX="159.0" layoutY="161.0" prefHeight="29.0" prefWidth="181.0" promptText="*Make" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="priceField" layoutX="160.0" layoutY="205.0" prefHeight="29.0" prefWidth="181.0" promptText="*Price" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Calibri" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="yearField" layoutX="393.0" layoutY="206.0" prefHeight="27.0" prefWidth="181.0" promptText="*Year" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField alignment="TOP_RIGHT" editable="false" layoutX="140.0" layoutY="50.0" mouseTransparent="true" prefHeight="27.0" prefWidth="506.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #A9A9A9;" text="Vehicle information">
+            <font>
+                <Font name="Calibri Bold Italic" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="kilometersField" alignment="TOP_LEFT" layoutX="159.0" layoutY="245.0" prefHeight="27.0" prefWidth="181.0" promptText="*Kilometres" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="powerField" alignment="TOP_LEFT" layoutX="393.0" layoutY="245.0" prefHeight="27.0" prefWidth="181.0" promptText="*Power(PS)" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <Text fx:id="AddAnnouncementMessage" fill="RED" layoutX="137.0" layoutY="419.0" wrappingWidth="394.0">
+            <font>
+                <Font name="Calibri Bold Italic" size="12.0" />
+            </font>
+        </Text>
+        <Button layoutX="475.0" layoutY="398.0" onAction="#handleAddAnnouncementAction" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #5895ff;" styleClass="register-button" stylesheets="@buttonstyle.css" text="Add Announcement" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold Italic" size="15.0" />
+            </font>
+        </Button>
+        <TextField editable="false" layoutX="138.0" layoutY="416.0" mouseTransparent="true" prefHeight="27.0" prefWidth="224.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px;" text="You must complete all fields marked with *">
+            <font>
+                <Font name="Calibri Bold Italic" size="10.0" />
+            </font>
+        </TextField>
+      <TextField fx:id="modelField" alignment="TOP_LEFT" layoutX="393.0" layoutY="161.0" prefHeight="29.0" prefWidth="181.0" promptText="*Model" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </TextField>
+      <VBox prefHeight="200.0" prefWidth="100.0" />
+      <ChoiceBox fx:id="VehicleTypeBox" layoutX="153.0" layoutY="331.0" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #5895ff;" />
+      <TextField layoutX="153.0" layoutY="285.0" prefHeight="27.0" prefWidth="181.0" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" text="*Vehicle Type : ">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="393.0" layoutY="285.0" prefHeight="27.0" prefWidth="181.0" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" text="*Fuel Type : ">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="FuelTypeBox" layoutX="393.0" layoutY="331.0" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #5895ff;" />
+      <Button layoutX="153.0" layoutY="375.0" prefHeight="28.0" prefWidth="181.0" style="-fx-background-color: #5895ff;" styleClass="register-button" stylesheets="@buttonstyle.css" text="Add Photos" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <TextField layoutX="153.0" layoutY="88.0" prefHeight="27.0" prefWidth="238.0" style="-fx-background-color: transaprent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" text="*Select the announcement type :">
+         <font>
+            <Font name="Calibri Italic" size="13.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="SellBox" layoutX="159.0" layoutY="134.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="81.0" style="-fx-background-color: transparent;" text="Sell" textFill="#5895ff">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="RentBox" layoutX="340.0" layoutY="134.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="81.0" style="-fx-background-color: transparent;" text="Rent" textFill="#5895ff">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="SwapBox" layoutX="522.0" layoutY="134.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="81.0" style="-fx-background-color: transparent;" text="Swap" textFill="#5895ff">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </CheckBox>
+    </children>
+</AnchorPane>
