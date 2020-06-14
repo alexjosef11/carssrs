@@ -21,7 +21,7 @@
                         <Image url="@Logo.png" />
                     </image>
                 </ImageView>
-                <Button layoutY="424.0" mnemonicParsing="false" onAction="#goBackToRoleChooseScene" style="-fx-background-color: transparent;" styleClass="back-next-button" stylesheets="@buttonstyle.css" text="Back" textAlignment="CENTER" textFill="WHITE">
+                <Button layoutY="424.0" mnemonicParsing="false" onAction="#goBackToLoginSignup" style="-fx-background-color: transparent;" styleClass="back-next-button" stylesheets="@buttonstyle.css" text="Back" textAlignment="CENTER" textFill="WHITE">
                     <font>
                         <Font name="Calibri Bold Italic" size="16.0" />
                     </font>
