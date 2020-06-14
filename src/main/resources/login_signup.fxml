@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="applicationowner" prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.LoginSignupController">
+    <children>
+        <Pane prefHeight="103.0" prefWidth="650.0" style="-fx-background-color: #5985ff;">
+            <children>
+                <ImageView fitHeight="176.0" fitWidth="246.0" layoutX="-29.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Logo.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="-1.0" layoutY="421.0" mnemonicParsing="false" onAction="#goBackToLoginScene" style="-fx-background-color: transparent;" styleClass="back-next-button" stylesheets="@buttonstyle.css" text="Go back to Login" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                    </font>
+                </Button>
+            <TextField alignment="BOTTOM_CENTER" editable="false" layoutX="123.0" layoutY="5.0" mouseTransparent="true" prefHeight="60.0" prefWidth="504.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px;" text="Welcome to our newest application for selling, renting and swaping cars ">
+               <font>
+                  <Font name="Calibri Italic" size="16.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            </children></Pane>
+        <HBox alignment="TOP_RIGHT" layoutX="450.0" layoutY="-3.0" prefHeight="35.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="minimizeField" contentDisplay="TOP" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="24.0" prefWidth="35.0" style="-fx-background-color: transparent;" text="...." textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="11.0" />
+                    </font>
+                </Button>
+                <Button fx:id="closeField" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#closeWindow" prefHeight="27.0" prefWidth="25.0" style="-fx-background-color: transparent;" text="X" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+      <TextField alignment="BOTTOM_CENTER" editable="false" layoutX="133.0" layoutY="15.0" mouseTransparent="true" prefHeight="60.0" prefWidth="504.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px;">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="32.0" layoutY="185.0" prefHeight="60.0" prefWidth="293.0" style="-fx-background-color: transparent;" text="If you are allready an user of CARS SR&amp;S, please Login">
+         <font>
+            <Font name="Calibri Italic" size="12.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="325.0" layoutY="185.0" prefHeight="60.0" prefWidth="293.0" style="-fx-background-color: transparent;" text="If you don't have an account, please go an Sign Up">
+         <font>
+            <Font name="Calibri Italic" size="12.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+        <Button fx:id="goToApplicationOwnerPin" contentDisplay="CENTER" layoutX="100.0" layoutY="245.0" onAction="#goBackToLoginScene" pickOnBounds="false" prefHeight="70.0" prefWidth="158.0" style="-fx-border-color: #5985ff; -fx-background-color: transparent; -fx-border-width: 2px 2px 2px 2px;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Login" textAlignment="RIGHT" textFill="#00000099">
+            <font>
+                <Font name="Calibri Bold" size="18.0" />
+            </font></Button>
+        <Button fx:id="goToUserRegister" layoutX="392.0" layoutY="245.0" onAction="#goBackToRoleChooseScene" prefHeight="70.0" prefWidth="158.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Sign Up" textFill="#00000099">
+            <font>
+                <Font name="Calibri Bold" size="18.0" />
+            </font></Button>
+    </children>
+</AnchorPane>
