@@ -21,7 +21,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         UserService.loadUsersFromFile();
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
         root.setOnMousePressed(event -> {
             xOffset = event.getSceneX();
             yOffset = event.getSceneY();

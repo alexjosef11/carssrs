@@ -55,6 +55,29 @@ public class LoginController {
             passwordconfirmField.clear();
         }
     }
+    public void goBackToLoginSignup(javafx.event.ActionEvent back) throws IOException {
+        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
+        Scene adminpinscene = new Scene(rolechoose, 650, 465);
+        Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
+        window.setScene(adminpinscene);
+        rolechoose.setOnMousePressed(event -> {
+            xOffset = event.getSceneX();
+            yOffset = event.getSceneY();
+        });
+        rolechoose.setOnMouseDragged(event -> {
+            window.setX(event.getScreenX() - xOffset);
+            window.setY(event.getScreenY() - yOffset);
+            window.setOpacity(0.8f);
+        });
+        rolechoose.setOnDragDone(event -> {
+            window.setOpacity(1.0f);
+        });
+        rolechoose.setOnMouseReleased(event -> {
+            window.setOpacity(1.0f);
+        });
+        window.show();
+    }
+
     public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
         Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
         Scene adminpinscene = new Scene(rolechoose, 650, 465);
