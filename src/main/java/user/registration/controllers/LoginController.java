@@ -9,21 +9,18 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import user.registration.exceptions.FieldNotCompletedException;
-import user.registration.exceptions.PasswordConfirmationException;
-import user.registration.exceptions.UsernameAlreadyExistsException;
-import user.registration.exceptions.WeekPasswordException;
+import user.registration.exceptions.*;
 import user.registration.services.UserService;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-public class RegistrationController {
+public class LoginController {
 
     private double xOffset = 0;
     private double yOffset = 0;
     @FXML
-    private Text registrationMessage;
+    private Text loginMessage;
     @FXML
     private TextField roleField;
     @FXML
@@ -32,47 +29,28 @@ public class RegistrationController {
     private PasswordField passwordField;
     @FXML
     private PasswordField passwordconfirmField;
-    @FXML
-    private TextField firstnameField;
-    @FXML
-    private TextField secondnameField;
-    @FXML
-    private TextField phonenumberField;
-    @FXML
-    private TextField addressField;
-
 
     @FXML
-    public void handleRegisterAction() {
+    public void handleLoginAction() {
         try {
-            UserService.addUser(usernameField.getText(), passwordField.getText(),passwordconfirmField.getText(),
-                    firstnameField.getText(), secondnameField.getText(),phonenumberField.getText(),
-                    addressField.getText(),roleField.getText());
-            registrationMessage.setText("Account created successfully!");
+            UserService.loginUser(usernameField.getText(), passwordField.getText(),passwordconfirmField.getText());
+            loginMessage.setText("Login successfully!");
             usernameField.clear();
             passwordField.clear();
             passwordconfirmField.clear();
-            firstnameField.clear();
-            secondnameField.clear();
-            phonenumberField.clear();
-            addressField.clear();
-        } catch (UsernameAlreadyExistsException e) {
-            registrationMessage.setText(e.getMessage());
+        } catch (UsernameDoesNotExistsException e) {
+            loginMessage.setText(e.getMessage());
+            usernameField.clear();
             passwordField.clear();
             passwordconfirmField.clear();
         }
         catch (PasswordConfirmationException e) {
-            registrationMessage.setText(e.getMessage());
+            loginMessage.setText(e.getMessage());
             passwordField.clear();
             passwordconfirmField.clear();
         }
-        catch (FieldNotCompletedException e) {
-            registrationMessage.setText(e.getMessage());
-            passwordField.clear();
-            passwordconfirmField.clear();
-        }
-        catch (WeekPasswordException e) {
-            registrationMessage.setText(e.getMessage());
+        catch (WrongPasswordException e) {
+            loginMessage.setText(e.getMessage());
             passwordField.clear();
             passwordconfirmField.clear();
         }

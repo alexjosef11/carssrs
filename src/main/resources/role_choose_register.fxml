@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="applicationowner" prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.ChooseRoleController">
+<AnchorPane fx:id="applicationowner" prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.ChooseRoleController">
    <children>
       <Button fx:id="goToApplicationOwnerPin" contentDisplay="CENTER" layoutX="178.0" layoutY="210.0" onAction="#goToPinAdminScene" pickOnBounds="false" prefHeight="70.0" prefWidth="158.0" style="-fx-border-color: #5985ff; -fx-background-color: transparent; -fx-border-width: 2px 2px 2px 2px;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Application Owner" textAlignment="RIGHT" textFill="#00000099">
          <font>
@@ -31,6 +35,11 @@
                   <Image url="@Logo.png" />
                </image>
             </ImageView>
+            <Button layoutX="-1.0" layoutY="421.0" mnemonicParsing="false" onAction="#goBackToLoginScene" style="-fx-background-color: transparent;" styleClass="back-next-button" stylesheets="@buttonstyle.css" text="Go back to Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
          </children></Pane>
       <TextField alignment="CENTER" editable="false" layoutX="145.0" layoutY="272.0" prefHeight="60.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Choose this role ONLY if you work for CSR&amp;S.">
          <font>
