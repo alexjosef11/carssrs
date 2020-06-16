@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="applicationowner" prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.ChooseRoleController">
+<AnchorPane fx:id="applicationowner" prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.ClientInterfaceController">
     <children>
-        <Button fx:id="goToApplicationOwnerPin" contentDisplay="CENTER" layoutX="260.0" layoutY="110.0" onAction="#goToPinAdminScene" pickOnBounds="false" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-background-color: transparent; -fx-border-width: 2px 2px 2px 2px;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="See Anouncements Feed" textAlignment="RIGHT" textFill="#00000099">
+        <Button fx:id="goToApplicationOwnerPin" contentDisplay="CENTER" layoutX="260.0" layoutY="110.0" onAction="#goToAnnouncementsFeed" pickOnBounds="false" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-background-color: transparent; -fx-border-width: 2px 2px 2px 2px;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="See Announcements Feed" textAlignment="RIGHT" textFill="#00000099">
             <font>
                 <Font name="Calibri Bold" size="13.0" />
             </font></Button>
@@ -24,7 +24,7 @@
                 <Blend />
             </effect>
         </TextField>
-        <Button fx:id="goToUserRegister" layoutX="260.0" layoutY="180.0" onAction="#goToUserRegisterScene" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Create new announcement" textFill="#00000099">
+        <Button fx:id="goToUserRegister" layoutX="260.0" layoutY="180.0" onAction="#goToCreateNewAnnouncement" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Create new announcement" textFill="#00000099">
             <font>
                 <Font name="Calibri Bold" size="13.0" />
             </font></Button>
@@ -50,22 +50,22 @@
                 </Button>
             </children>
         </HBox>
-      <Button fx:id="goToUserRegister1" layoutX="261.0" layoutY="250.0" onAction="#goToUserRegisterScene" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="See Offer Tab" textFill="#00000099">
+      <Button fx:id="goToUserRegister1" layoutX="261.0" layoutY="250.0" onAction="#goToOfferTab" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="See Offer Tab" textFill="#00000099">
          <font>
             <Font name="Calibri Bold" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="goToUserRegister2" layoutX="261.0" layoutY="321.0" onAction="#goToUserRegisterScene" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="See Meeting Tab" textFill="#00000099">
+      <Button fx:id="goToUserRegister2" layoutX="261.0" layoutY="321.0" onAction="#goToMeetingTab" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="See Meeting Tab" textFill="#00000099">
          <font>
             <Font name="Calibri Bold" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="goToUserRegister21" layoutX="261.0" layoutY="391.0" onAction="#goToUserRegisterScene" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Account Profile" textFill="#00000099">
+      <Button fx:id="goToUserRegister21" layoutX="261.0" layoutY="391.0" onAction="#goToAccountProfile" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Account Profile" textFill="#00000099">
          <font>
             <Font name="Calibri Bold" size="13.0" />
          </font>
       </Button>
-      <TextField alignment="BOTTOM_LEFT" editable="false" layoutX="140.0" layoutY="14.0" mouseTransparent="true" prefHeight="36.0" prefWidth="502.0" style="-fx-background-color: transparent; -fx-border-color: #5985ff; -fx-border-width: 0px 0px 2px 0px;">
+      <TextField fx:id="usernameField" alignment="BOTTOM_LEFT" editable="false" layoutX="140.0" layoutY="14.0" mouseTransparent="true" prefHeight="36.0" prefWidth="502.0" style="-fx-background-color: transparent; -fx-border-color: #5985ff; -fx-border-width: 0px 0px 2px 0px;">
          <font>
             <Font name="Calibri Italic" size="14.0" />
          </font>

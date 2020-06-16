@@ -22,8 +22,6 @@ public class LoginController {
     @FXML
     private Text loginMessage;
     @FXML
-    private TextField roleField;
-    @FXML
     private TextField usernameField;
     @FXML
     private PasswordField passwordField;
@@ -31,13 +29,36 @@ public class LoginController {
     private PasswordField passwordconfirmField;
 
     @FXML
-    public void handleLoginAction() {
+    public void handleLoginAction(javafx.event.ActionEvent clientinterface) throws IOException {
         try {
             UserService.loginUser(usernameField.getText(), passwordField.getText(),passwordconfirmField.getText());
             loginMessage.setText("Login successfully!");
-            usernameField.clear();
-            passwordField.clear();
-            passwordconfirmField.clear();
+            {
+                FXMLLoader Loader = new FXMLLoader();
+                Loader.setLocation(getClass().getClassLoader().getResource("client_interface.fxml"));
+                Parent viewclientinterface = Loader.load();
+                ClientInterfaceController clientInterfaceController  = Loader.getController();
+                clientInterfaceController.setusername("Welcome " + usernameField.getText() + "!" );
+                Scene clientregisterscene = new Scene(viewclientinterface, 650, 465);
+                Stage window = (Stage) ((Node)clientinterface.getSource()).getScene().getWindow();
+                viewclientinterface.setOnMousePressed(event -> {
+                    xOffset = event.getSceneX();
+                    yOffset = event.getSceneY();
+                });
+                viewclientinterface.setOnMouseDragged(event -> {
+                    window.setX(event.getScreenX() - xOffset);
+                    window.setY(event.getScreenY() - yOffset);
+                    window.setOpacity(0.8f);
+                });
+                viewclientinterface.setOnDragDone(event -> {
+                    window.setOpacity(1.0f);
+                });
+                viewclientinterface.setOnMouseReleased(event -> {
+                    window.setOpacity(1.0f);
+                });
+                window.setScene(clientregisterscene);
+                window.show();
+            }
         } catch (UsernameDoesNotExistsException e) {
             loginMessage.setText(e.getMessage());
             usernameField.clear();
@@ -99,10 +120,6 @@ public class LoginController {
             window.setOpacity(1.0f);
         });
         window.show();
-    }
-
-    public void setRole(String role){
-        this.roleField.setText(role);
     }
 
     public void minimizeWindow(javafx.event.ActionEvent min) {
