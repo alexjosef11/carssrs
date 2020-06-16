@@ -103,8 +103,7 @@ public class AddAnnouncementsController {
     public void handleAddAnnouncementAction() {
         try {
             AnnouncementsService.addAnnouncement(makeField.getText(), modelField.getText(), priceField.getText(),
-                    yearField.getText(), kilometersField.getText(), powerField.getText(),
-                    (String) VehicleTypeBox.getValue(), (String) FuelTypeBox.getValue(), SellBox.isSelected(), RentBox.isSelected(), SwapBox.isSelected(), path);
+                    yearField.getText(), kilometersField.getText(), powerField.getText(), (String) VehicleTypeBox.getValue(), (String) FuelTypeBox.getValue(), SellBox.isSelected(), RentBox.isSelected(), SwapBox.isSelected(), path);
             AddAnnouncementMessage.setText("Announcements created sucessfully!");
             makeField.clear();
             modelField.clear();
