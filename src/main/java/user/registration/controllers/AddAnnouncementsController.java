@@ -93,8 +93,7 @@ public class AddAnnouncementsController {
     public void handleAddAnnouncementAction() {
         try {
             AnnouncementsService.addAnnouncement(makeField.getText(), modelField.getText(), priceField.getText(),
-                    yearField.getText(), kilometersField.getText(), powerField.getText(),
-                    (String) VehicleTypeBox.getValue(), (String) FuelTypeBox.getValue(), SellBox.isSelected(), RentBox.isSelected(), SwapBox.isSelected(), path);
+                    yearField.getText(), kilometersField.getText(), powerField.getText(), (String) VehicleTypeBox.getValue(), (String) FuelTypeBox.getValue(), SellBox.isSelected(), RentBox.isSelected(), SwapBox.isSelected(), path);
             AddAnnouncementMessage.setText("Announcements created sucessfully!");
             makeField.clear();
             modelField.clear();
@@ -113,7 +112,7 @@ public class AddAnnouncementsController {
         }
     }
     public void backtosomething(javafx.event.ActionEvent back) throws IOException {
-            Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
+            Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("client_interface.fxml"));
             Scene adminpinscene = new Scene(rolechoose, 650, 465);
             Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
             window.setScene(adminpinscene);

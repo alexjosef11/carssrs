@@ -20,7 +20,9 @@ import java.util.regex.Pattern;
 
 public class AnnouncementsService {
 
-    private static final Path USERS_PATH = FileSystemService.getPathToFile("config", "announcements.json");
+
+    public static final Path USERS_PATH = FileSystemService.getPathToFile("config", "announcements.json");
+
     private static List<Announcement> Announcements  = new ArrayList<Announcement>();
 
     public static void loadAnnouncementsFromFile() throws IOException {
@@ -30,16 +32,17 @@ public class AnnouncementsService {
         }
         ObjectMapper objectMapper = new ObjectMapper();
         Announcements = objectMapper.readValue(USERS_PATH.toFile(), new TypeReference<List<Announcement>>() {});}catch (IOException ex){
-        System.out.println("nu e bun");
     }
     }
 
 
-    public static void addAnnouncement(String makeFieldText, String text, String make, String model, String price, String year, String kilometers,
-                                       String power, boolean state, boolean rentBoxState, boolean selected, String file)
+
+    public static void addAnnouncement(String make, String model, String price, String year, String kilometers,
+                                       String power, String VehicleType, String FuelType, boolean state, boolean rentBoxState, boolean selected, String file)
             throws FieldNotCompletedException {
         checkAllFieldCompleted(make, model, price, year, kilometers, power);
-        Announcements.add(new Announcement(make, model, price, year, kilometers, power,state,rentBoxState,selected,file));
+        Announcements.add(new Announcement(make, model, price, year, kilometers, power,VehicleType,FuelType,state,rentBoxState,selected,file));
+
         persistAnnouncement();
     }
 

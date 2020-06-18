@@ -19,19 +19,19 @@ public class Announcement {
     private String path;
 
     public Announcement(String make, String model, String price, String year, String kilometers,
-                        String power, boolean SellBox, boolean RentBox, boolean SwapBox, String path) {
+                        String power, String VehicleType,String FuelType, boolean SellBox, boolean RentBox, boolean SwapBox, String path) {
         this.make = make;
         this.model = model;
         this.price = price;
         this.year = year;
         this.kilometers = kilometers;
         this.power = power;
+        this.VehicleType = VehicleType;
+        this.FuelType = FuelType;
         this.SellBox = SellBox;
         this.RentBox = RentBox;
         this.SwapBox = SwapBox;
         this.path = path;
-        //this.VehicleType = VehicleType;
-        //this.FuelType = FuelType;
     }
     public Announcement(){}
     public String getMake() {
@@ -68,6 +68,13 @@ public class Announcement {
     }
     public void setPower(String power) { this.power = power; }
 
+
+    public String getVehicleType() {return VehicleType;}
+    public void setVehicleType(String VehicleType) { this.VehicleType = VehicleType; }
+
+    public String getFuelType() {return FuelType;}
+    public void setFuelType(String FuelType) { this.FuelType = FuelType; }
+
     public boolean getSellBox(){return SellBox;}
     public void setSellBox(boolean SellBox){this.SellBox=SwapBox;}
 
@@ -80,11 +87,8 @@ public class Announcement {
     public String getFile(){return path;}
     public void setFile( String path){this.path=path;}
 
-  //  public String getVehicleType() {return VehicleType;}
-//    public void setVehicleType(String VehicleType) { this.VehicleType = VehicleType; }
 
-    //public String getFuelType() {return FuelType;}
-    //public void setFuelType(String FuelType) { this.FuelType = FuelType; }
+
 
 
     @Override
@@ -108,10 +112,16 @@ public class Announcement {
     }
     @Override
     public String toString() {
-        return "Car{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", year='" + year + '\'' +
-                '}';
+        return "Car : " +
+                "Make :" + make + '\'' +
+                ", Model :" + model + '\'' +
+                ", Year :" + year + '\'' +
+                ", Kilometers :\n" + kilometers + '\'' +
+                ", Power :" + power + '\'' +
+                ", Vehicle Type :" + VehicleType + '\'' +
+                ", Fuel Type :" + FuelType + '\'' +
+                ", Price : " + price + '\'' +
+                '.';
+
     }
 }

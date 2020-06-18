@@ -24,7 +24,7 @@ public class ClientInterfaceController {
     private TextField usernameField;
 
     public void goToAnnouncementsFeed(javafx.event.ActionEvent back) throws IOException {
-        Parent announcements = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
+        Parent announcements = FXMLLoader.load(getClass().getClassLoader().getResource("announcement_feed.fxml"));
         Scene announcementFeed = new Scene(announcements, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(announcementFeed);
