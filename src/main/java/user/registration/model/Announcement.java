@@ -68,6 +68,7 @@ public class Announcement {
     }
     public void setPower(String power) { this.power = power; }
 
+
     public String getVehicleType() {return VehicleType;}
     public void setVehicleType(String VehicleType) { this.VehicleType = VehicleType; }
 
@@ -85,6 +86,7 @@ public class Announcement {
 
     public String getFile(){return path;}
     public void setFile( String path){this.path=path;}
+
 
 
 
@@ -120,5 +122,6 @@ public class Announcement {
                 ", Fuel Type :" + FuelType + '\'' +
                 ", Price : " + price + '\'' +
                 '.';
+
     }
 }

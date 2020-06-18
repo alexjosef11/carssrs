@@ -20,7 +20,9 @@ import java.util.regex.Pattern;
 
 public class AnnouncementsService {
 
+
     public static final Path USERS_PATH = FileSystemService.getPathToFile("config", "announcements.json");
+
     private static List<Announcement> Announcements  = new ArrayList<Announcement>();
 
     public static void loadAnnouncementsFromFile() throws IOException {
@@ -34,11 +36,13 @@ public class AnnouncementsService {
     }
 
 
+
     public static void addAnnouncement(String make, String model, String price, String year, String kilometers,
                                        String power, String VehicleType, String FuelType, boolean state, boolean rentBoxState, boolean selected, String file)
             throws FieldNotCompletedException {
         checkAllFieldCompleted(make, model, price, year, kilometers, power);
         Announcements.add(new Announcement(make, model, price, year, kilometers, power,VehicleType,FuelType,state,rentBoxState,selected,file));
+
         persistAnnouncement();
     }
 
