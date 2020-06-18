@@ -16,16 +16,21 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:CSRS-65_UserFeedback" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="[CSRS-30] Sign up interface done.">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="[CSRS-68] Feedback quiz for users is done.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AdminPinRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AdminPinRegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/admin_pin_register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/admin_pin_register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/buttonstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/buttonstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/role_choose_register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/role_choose_register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/user_register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/user_register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsSRS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CarsSRS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/user_feedback.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/user_feedback.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +95,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="CSRS-65_UserFeedback" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -126,7 +131,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Program Files/SceneBuilder/SceneBuilder.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -134,25 +139,26 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\40734\IdeaProjects" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\40734\IdeaProjects\src\main\resources" />
+      <recent name="C:\Users\40734\IdeaProjects\src\main\resources\src\main\asdsd" />
+      <recent name="C:\Users\40734\IdeaProjects\src\main\resources\styles" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="user.registration.services" />
       <recent name="user.registration.exceptions" />
       <recent name="user.registration.controllers" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\40734\IdeaProjects\src\main\resources" />
-      <recent name="C:\Users\40734\IdeaProjects\src\main\resources\src\main\asdsd" />
-      <recent name="C:\Users\40734\IdeaProjects\src\main\resources\styles" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\carssrs\src\main\resources" />
+      <recent name="C:\Users\40734\IdeaProjects" />
     </key>
   </component>
   <component name="RunManager">
@@ -268,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589474926556</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[CSRS-67] Feedback interface done.">
+      <created>1592141242491</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592141242491</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[CSRS-68] Feedback quiz for users is done.">
+      <created>1592479551377</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592479551377</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +299,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="CSRS-65_UserFeedback" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -292,21 +324,32 @@
     <MESSAGE value="[CSRS-10] Added simple registration for user." />
     <MESSAGE value="[CSRS-31] Sign up process done." />
     <MESSAGE value="[CSRS-30] Sign up interface done." />
-    <option name="LAST_COMMIT_MESSAGE" value="[CSRS-30] Sign up interface done." />
+    <MESSAGE value="[CSRS-67] Feedback interface done." />
+    <MESSAGE value="[CSRS-68] Feedback quiz for users is done." />
+    <option name="LAST_COMMIT_MESSAGE" value="[CSRS-68] Feedback quiz for users is done." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1589151673128">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="0" width="816" height="728" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1589151673128" />
-    <state x="163" y="0" key="#Project_Structure" timestamp="1588618882072">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="191" y="0" key="#Project_Structure" timestamp="1591735561442">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1588618882072" />
+    <state x="191" y="0" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1591735561442" />
+    <state x="544" y="181" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1592069624012">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="544" y="181" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1592069624012" />
     <state x="267" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589141565836">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="267" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1589141565836" />
+    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1592247440078">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1592247440078" />
     <state x="683" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587911579625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -315,50 +358,67 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589408003874" />
+    <state x="555" y="133" key="#xdebugger.evaluate" timestamp="1592291047571">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="555" y="133" key="#xdebugger.evaluate/0.0.1600.860@0.0.1600.860" timestamp="1592291047571" />
     <state x="452" y="110" width="440" height="510" key="FileChooserDialogImpl" timestamp="1589403605455">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="452" y="110" width="440" height="510" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589403605455" />
-    <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1589544585477">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.0.bottom" timestamp="1592291337842">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589544585477" />
-    <state width="1323" height="125" key="GridCell.Tab.0.center" timestamp="1589544585477">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592291337842" />
+    <state width="1557" height="276" key="GridCell.Tab.0.center" timestamp="1592291337842">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="125" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589544585477" />
-    <state width="1323" height="125" key="GridCell.Tab.0.left" timestamp="1589544585477">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1592291337842" />
+    <state width="1557" height="276" key="GridCell.Tab.0.left" timestamp="1592291337842">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="125" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589544585477" />
-    <state width="1323" height="125" key="GridCell.Tab.0.right" timestamp="1589544585477">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1592291337842" />
+    <state width="1557" height="276" key="GridCell.Tab.0.right" timestamp="1592291337842">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="125" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589544585477" />
-    <state width="1323" height="128" key="GridCell.Tab.1.bottom" timestamp="1589163788110">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1592291337842" />
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1592291337858">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="128" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589163788110" />
-    <state width="1323" height="128" key="GridCell.Tab.1.center" timestamp="1589163788110">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592291337858" />
+    <state width="1557" height="276" key="GridCell.Tab.1.center" timestamp="1592291337842">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="128" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589163788110" />
-    <state width="1323" height="128" key="GridCell.Tab.1.left" timestamp="1589163788110">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1592291337842" />
+    <state width="1557" height="276" key="GridCell.Tab.1.left" timestamp="1592291337842">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="128" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589163788110" />
-    <state width="1323" height="128" key="GridCell.Tab.1.right" timestamp="1589163788110">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1592291337842" />
+    <state width="1557" height="276" key="GridCell.Tab.1.right" timestamp="1592291337858">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="128" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589163788110" />
+    <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1592291337858" />
+    <state x="330" y="85" key="Maven.ArtifactSearchDialog" timestamp="1592254914045">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="330" y="85" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1592254914045" />
     <state x="56" y="18" width="916" height="710" key="SettingsEditor" timestamp="1589231407027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="56" y="18" width="916" height="710" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589231407027" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1589474946744">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="322" y="115" key="Vcs.Push.Dialog.v2" timestamp="1592141257986">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589474946744" />
+    <state x="322" y="115" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1592141257986" />
     <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589154007697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -367,10 +427,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="454" y="170" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1589155340455" />
-    <state x="392" y="-7" width="585" height="728" key="find.popup" timestamp="1589464308022">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="459" y="-8" width="686" height="860" key="find.popup" timestamp="1592145819981">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="-7" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1589464308022" />
+    <state x="459" y="-8" width="686" height="860" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1592145819981" />
     <state x="65" y="0" key="new project wizard" timestamp="1589463110476">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

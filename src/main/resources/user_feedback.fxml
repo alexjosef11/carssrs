@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.FeedbackController">
     <children>
@@ -53,7 +54,7 @@
                 <Font name="Calibri Bold Italic" size="14.0" />
             </font>
         </TextField>
-        <Button layoutX="299.0" layoutY="388.0" onAction="#handleFeedbackAction" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #5895ff;" styleClass="register-button" stylesheets="@buttonstyle.css" text="Done" textAlignment="CENTER" textFill="WHITE">
+        <Button layoutX="298.0" layoutY="398.0" onAction="#handleFeedbackAction" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: #5895ff;" styleClass="register-button" stylesheets="@buttonstyle.css" text="Done" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font name="Calibri Bold Italic" size="15.0" />
             </font>
@@ -82,5 +83,10 @@
          </font>
       </TextField>
       <TextField fx:id="response4" layoutX="143.0" layoutY="331.0" prefHeight="25.0" prefWidth="297.0" promptText="response" />
+      <Text fx:id="answer" fill="RED" layoutX="163.0" layoutY="377.0" wrappingWidth="394.0">
+         <font>
+            <Font name="Calibri Bold Italic" size="12.0" />
+         </font>
+      </Text>
     </children>
 </AnchorPane>

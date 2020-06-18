@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import user.registration.controllers.FeedbackAdminController;
+import user.registration.services.FeedbackService;
 import user.registration.services.UserService;
 
 public class Main extends Application {
@@ -21,7 +23,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         UserService.loadUsersFromFile();
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
+       FeedbackService.loadFeedbackFromFile();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("admin_feedback.fxml"));
         root.setOnMousePressed(event -> {
             xOffset = event.getSceneX();
             yOffset = event.getSceneY();
