@@ -47,7 +47,7 @@ public class ClientInterfaceController {
     }
 
     public void goToCreateNewAnnouncement(javafx.event.ActionEvent back) throws IOException {
-        Parent loginsignup = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
+        Parent loginsignup = FXMLLoader.load(getClass().getClassLoader().getResource("add_announcements.fxml"));
         Scene loginsignupinterface = new Scene(loginsignup, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(loginsignupinterface);
