@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="applicationowner" prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.ClientInterfaceController">
+<AnchorPane fx:id="applicationowner" prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.AdminInterfaceController">
     <children>
         <Button fx:id="goToApplicationOwnerPin" contentDisplay="CENTER" layoutX="260.0" layoutY="139.0" onAction="#goToAnnouncementsFeed" pickOnBounds="false" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-background-color: transparent; -fx-border-width: 2px 2px 2px 2px;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Transactions" textAlignment="RIGHT" textFill="#00000099">
             <font>
@@ -35,7 +35,7 @@
                         <Image url="@Logo.png" />
                     </image>
                 </ImageView>
-            <Button layoutX="32.0" layoutY="411.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="back-next-button" stylesheets="@buttonstyle.css" text="Logout" textAlignment="CENTER" textFill="WHITE">
+            <Button layoutX="32.0" layoutY="411.0" mnemonicParsing="false" onAction="#goBackToLoginSignup" style="-fx-background-color: transparent;" styleClass="back-next-button" stylesheets="@buttonstyle.css" text="Logout" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Calibri Bold" size="16.0" />
                </font>

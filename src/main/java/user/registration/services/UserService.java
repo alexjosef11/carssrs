@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 public class UserService {
 
     private static final Path USERS_PATH = FileSystemService.getPathToFile("config", "users.json");
-    private static List<User> users;
+    public static List<User> users;
 
     public static void loadUsersFromFile() throws IOException {
 
@@ -47,7 +47,6 @@ public class UserService {
         checkUserDoesAlreadyExist(username);
         checkPasswordsMach(password, passwordconfirm);
         checkPassword(password,username);
-
     }
 
     private static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
