@@ -122,7 +122,7 @@ public class AddAnnouncementsController {
         }
     }
     public void backtosomething(javafx.event.ActionEvent back) throws IOException {
-            Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("announcement_feed.fxml"));
+            Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("client_interface.fxml"));
             Scene adminpinscene = new Scene(rolechoose, 650, 465);
             Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
             window.setScene(adminpinscene);

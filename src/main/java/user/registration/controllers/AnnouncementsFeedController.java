@@ -1,8 +1,5 @@
 package user.registration.controllers;
 
-import com.fasterxml.jackson.core.JsonParser;
-import java.io.FileInputStream;
-
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javafx.collections.FXCollections;
@@ -12,30 +9,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
-import javafx.scene.media.MediaView;
 import javafx.scene.text.Text;
-import javafx.stage.FileChooser;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import org.apache.commons.io.FileUtils;
-import user.registration.exceptions.FieldNotCompletedException;
 import user.registration.model.Announcement;
-import user.registration.services.AnnouncementsService;
-import user.registration.services.FileSystemService;
-import static user.registration.services.AnnouncementsService.USERS_PATH;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+
+import static user.registration.services.AnnouncementsService.USERS_PATH;
 
 public class AnnouncementsFeedController {
 
@@ -85,7 +72,7 @@ public class AnnouncementsFeedController {
                 });
     }
     public void backtosomething(javafx.event.ActionEvent back) throws IOException {
-            Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
+            Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("client_interface.fxml"));
             Scene adminpinscene = new Scene(rolechoose, 650, 465);
             Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
             window.setScene(adminpinscene);
