@@ -362,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592480235333</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[CSRS-6] AddAnnouncements. Linked up the Client Interface to Add new Announcement. Merged with Master.">
+      <created>1592485331405</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1592485331405</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +414,8 @@
     <MESSAGE value="[CSRS-63] Client interface done." />
     <MESSAGE value="[CSRS-64] Client interface buttons and actions done." />
     <MESSAGE value="[CSRS-61] Admin interface done." />
-    <option name="LAST_COMMIT_MESSAGE" value="[CSRS-61] Admin interface done." />
+    <MESSAGE value="[CSRS-6] AddAnnouncements. Linked up the Client Interface to Add new Announcement. Merged with Master." />
+    <option name="LAST_COMMIT_MESSAGE" value="[CSRS-6] AddAnnouncements. Linked up the Client Interface to Add new Announcement. Merged with Master." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1589151673128">
@@ -434,6 +442,7 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589408003874" />
+
     <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1592486487409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -478,6 +487,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="139" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591738751683" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1592484748922">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592484748922" />
     <state x="56" y="18" width="916" height="710" key="SettingsEditor" timestamp="1589231407027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -486,10 +499,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="497" y="277" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1592151277320" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592480813175">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="387" y="139" key="Vcs.Push.Dialog.v2" timestamp="1592485339095">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592480813175" />
+    <state x="387" y="139" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592485339095" />
     <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589154007697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
