@@ -12,7 +12,7 @@
 
 <AnchorPane fx:id="applicationowner" prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.AdminInterfaceController">
     <children>
-        <Button fx:id="goToApplicationOwnerPin" contentDisplay="CENTER" layoutX="260.0" layoutY="139.0" onAction="#goToAnnouncementsFeed" pickOnBounds="false" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-background-color: transparent; -fx-border-width: 2px 2px 2px 2px;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Transactions" textAlignment="RIGHT" textFill="#00000099">
+        <Button fx:id="goToApplicationOwnerPin" contentDisplay="CENTER" layoutX="260.0" layoutY="139.0" onAction="#goToTranzactionTab" pickOnBounds="false" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-background-color: transparent; -fx-border-width: 2px 2px 2px 2px;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Transactions" textAlignment="RIGHT" textFill="#00000099">
             <font>
                 <Font name="Calibri Bold" size="13.0" />
             </font></Button>
@@ -24,7 +24,7 @@
                 <Blend />
             </effect>
         </TextField>
-        <Button fx:id="goToUserRegister" layoutX="260.0" layoutY="246.0" onAction="#goToCreateNewAnnouncement" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Schedule Mettings" textFill="#00000099">
+        <Button fx:id="goToUserRegister" layoutX="260.0" layoutY="246.0" onAction="#goToScheldueTab" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Schedule Mettings" textFill="#00000099">
             <font>
                 <Font name="Calibri Bold" size="13.0" />
             </font></Button>
@@ -55,7 +55,7 @@
                 </Button>
             </children>
         </HBox>
-        <Button fx:id="goToUserRegister1" layoutX="260.0" layoutY="348.0" onAction="#goToOfferTab" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Feedbacks" textFill="#00000099">
+        <Button fx:id="goToUserRegister1" layoutX="260.0" layoutY="348.0" onAction="#goToFeedbacksTab" prefHeight="60.0" prefWidth="241.0" style="-fx-border-color: #5985ff; -fx-border-width: 2px 2px 2px 2px; -fx-background-color: transparent;" styleClass="choose-role-button" stylesheets="@buttonstyle.css" text="Feedbacks" textFill="#00000099">
             <font>
                 <Font name="Calibri Bold" size="13.0" />
             </font>
