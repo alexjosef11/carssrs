@@ -1,31 +1,21 @@
 package user.registration.controllers;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.glass.ui.CommonDialogs;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javafx.stage.Window;
-import sun.plugin2.os.windows.Windows;
-import user.registration.exceptions.*;
+import user.registration.exceptions.FieldNotCompletedException;
 import user.registration.services.AnnouncementsService;
-import user.registration.services.UserService;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
-import java.security.cert.Extension;
-import java.util.List;
 
 public class AddAnnouncementsController {
     /*
