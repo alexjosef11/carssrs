@@ -6,8 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import user.registration.controllers.AddAnnouncementsController;
-import user.registration.services.AnnouncementsService;
 import user.registration.services.UserService;
 
 public class Main extends Application {
@@ -23,8 +21,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         UserService.loadUsersFromFile();
-        AnnouncementsService.loadAnnouncementsFromFile();
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("add_announcements.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
         root.setOnMousePressed(event -> {
             xOffset = event.getSceneX();
             yOffset = event.getSceneY();

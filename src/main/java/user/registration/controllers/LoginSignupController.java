@@ -9,59 +9,31 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ChooseRoleController {
+public class LoginSignupController {
 
     private double xOffset = 0;
     private double yOffset = 0;
     @FXML
-    public void goToPinAdminScene(javafx.event.ActionEvent applicationowner) throws IOException {
-        Parent viewadminpinregister = FXMLLoader.load(getClass().getClassLoader().getResource("admin_pin_register.fxml"));
-        Scene adminpinscene = new Scene(viewadminpinregister, 650, 465);
-        Stage window = (Stage) ((Node)applicationowner.getSource()).getScene().getWindow();
-        viewadminpinregister.setOnMousePressed(event -> {
-            xOffset = event.getSceneX();
-            yOffset = event.getSceneY();
-        });
-        viewadminpinregister.setOnMouseDragged(event -> {
-            window.setX(event.getScreenX() - xOffset);
-            window.setY(event.getScreenY() - yOffset);
-            window.setOpacity(0.8f);
-        });
-        viewadminpinregister.setOnDragDone(event -> {
-            window.setOpacity(1.0f);
-        });
-        viewadminpinregister.setOnMouseReleased(event -> {
-            window.setOpacity(1.0f);
-        });
+    public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
+        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
+        Scene adminpinscene = new Scene(rolechoose, 650, 465);
+        Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(adminpinscene);
-        window.show();
-    }
-
-    @FXML
-    public void goToUserRegisterScene(javafx.event.ActionEvent client) throws IOException {
-        FXMLLoader Loader = new FXMLLoader();
-        Loader.setLocation(getClass().getClassLoader().getResource("user_register.fxml"));
-        Parent viewuserregistration = Loader.load();
-        RegistrationController registrationController  = Loader.getController();
-        registrationController.setRole("Client");
-        Scene clientregisterscene = new Scene(viewuserregistration, 650, 465);
-        Stage window = (Stage) ((Node)client.getSource()).getScene().getWindow();
-        viewuserregistration.setOnMousePressed(event -> {
+        rolechoose.setOnMousePressed(event -> {
             xOffset = event.getSceneX();
             yOffset = event.getSceneY();
         });
-        viewuserregistration.setOnMouseDragged(event -> {
+        rolechoose.setOnMouseDragged(event -> {
             window.setX(event.getScreenX() - xOffset);
             window.setY(event.getScreenY() - yOffset);
             window.setOpacity(0.8f);
         });
-        viewuserregistration.setOnDragDone(event -> {
+        rolechoose.setOnDragDone(event -> {
             window.setOpacity(1.0f);
         });
-        viewuserregistration.setOnMouseReleased(event -> {
+        rolechoose.setOnMouseReleased(event -> {
             window.setOpacity(1.0f);
         });
-        window.setScene(clientregisterscene);
         window.show();
     }
 
