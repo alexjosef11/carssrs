@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 public class UserService {
 
     private static final Path USERS_PATH = FileSystemService.getPathToFile("config", "users.json");
-    private static List<User> users;
+    public static List<User> users;
 
     public static void loadUsersFromFile() throws IOException {
 
@@ -42,6 +42,11 @@ public class UserService {
         checkPasswordformatException(password);
         users.add(new User(username, encodePassword(username, password),encodePassword(username, passwordconfirm), firstname, secondname, phonenumber, address, role));
         persistUsers();
+    }
+    public static void loginUser(String username, String password, String passwordconfirm) throws UsernameDoesNotExistsException, PasswordConfirmationException, WrongPasswordException {
+        checkUserDoesAlreadyExist(username);
+        checkPasswordsMach(password, passwordconfirm);
+        checkPassword(password,username);
     }
 
     private static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
@@ -118,4 +123,30 @@ public class UserService {
         }
         return md;
     }
+
+    private static void checkUserDoesAlreadyExist(String username) throws UsernameDoesNotExistsException {
+        int ok=0;
+        for (User user : users) {
+            if (Objects.equals(username, user.getUsername()))
+                ok=1;
+        }
+        if(ok==0){
+            throw new UsernameDoesNotExistsException(username);
+        }
+    }
+
+    private static void checkPassword(String password, String username) throws WrongPasswordException {
+        int ok=0;
+        for (User user : users) {
+            if (Objects.equals(username, user.getUsername())) {
+                if (Objects.equals(encodePassword(username,password), user.getPassword())) {
+                    ok = 1;
+                }
+            }
+        }
+        if(ok==0) {
+                throw new WrongPasswordException();
+            }
+    }
+
 }
