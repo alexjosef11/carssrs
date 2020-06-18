@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 
 public class AnnouncementsService {
 
-    private static final Path USERS_PATH = FileSystemService.getPathToFile("config", "announcements.json");
+    public static final Path USERS_PATH = FileSystemService.getPathToFile("config", "announcements.json");
     private static List<Announcement> Announcements  = new ArrayList<Announcement>();
 
     public static void loadAnnouncementsFromFile() throws IOException {
