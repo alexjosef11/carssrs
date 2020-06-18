@@ -110,10 +110,15 @@ public class Announcement {
     }
     @Override
     public String toString() {
-        return "Car{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", year='" + year + '\'' +
-                '}';
+        return "Car : " +
+                "Make :" + make + '\'' +
+                ", Model :" + model + '\'' +
+                ", Year :" + year + '\'' +
+                ", Kilometers :\n" + kilometers + '\'' +
+                ", Power :" + power + '\'' +
+                ", Vehicle Type :" + VehicleType + '\'' +
+                ", Fuel Type :" + FuelType + '\'' +
+                ", Price : " + price + '\'' +
+                '.';
     }
 }
