@@ -1,18 +1,14 @@
 package user.registration.controllers;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import user.registration.exceptions.FieldNotCompletedException;
 import user.registration.services.FeedbackService;
-import user.registration.services.UserService;
 
 import java.io.IOException;
 
@@ -57,7 +53,7 @@ public class FeedbackController {
     }
 
     public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
-        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
+        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("client_interface.fxml"));
         Scene adminpinscene = new Scene(rolechoose, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(adminpinscene);

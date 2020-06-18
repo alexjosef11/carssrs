@@ -17,7 +17,7 @@ public class AdminInterfaceController {
     @FXML
     private TextField usernameField;
 
-    public void goToAnnouncementsFeed(javafx.event.ActionEvent back) throws IOException {
+    public void goToTranzactionTab(javafx.event.ActionEvent back) throws IOException {
         Parent announcements = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
         Scene announcementFeed = new Scene(announcements, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
@@ -40,8 +40,8 @@ public class AdminInterfaceController {
         window.show();
     }
 
-    public void goToCreateNewAnnouncement(javafx.event.ActionEvent back) throws IOException {
-        Parent loginsignup = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
+    public void goToScheldueTab(javafx.event.ActionEvent back) throws IOException {
+        Parent loginsignup = FXMLLoader.load(getClass().getClassLoader().getResource("admin_scheldue.fxml"));
         Scene loginsignupinterface = new Scene(loginsignup, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(loginsignupinterface);
@@ -63,8 +63,8 @@ public class AdminInterfaceController {
         window.show();
     }
 
-    public void goToOfferTab(javafx.event.ActionEvent back) throws IOException {
-        Parent ofertab = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
+    public void goToFeedbacksTab(javafx.event.ActionEvent back) throws IOException {
+        Parent ofertab = FXMLLoader.load(getClass().getClassLoader().getResource("admin_feedback.fxml"));
         Scene ofertabinterface = new Scene(ofertab, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(ofertabinterface);

@@ -4,23 +4,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static user.registration.model.FeedbackAdmin.Responses;
+public class AdminScheldue {
 
-public class FeedbackAdminController {
-
-    public TextArea responses;
-
+    public TextField scheldueMessage;
     private double xOffset = 0;
     private double yOffset = 0;
 
-    public void handleResponseAction(){
-        responses.appendText(Responses);
-    }
     public void minimizeWindow(javafx.event.ActionEvent min) {
         Stage window = (Stage) ((Node)min.getSource()).getScene().getWindow();
         window.setIconified(true);
@@ -55,3 +49,5 @@ public class FeedbackAdminController {
     }
 
 }
+
+
