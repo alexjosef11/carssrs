@@ -116,7 +116,7 @@ public class ClientInterfaceController {
     }
 
     public void goToAccountProfile(javafx.event.ActionEvent back) throws IOException {
-        Parent accountprofile = FXMLLoader.load(getClass().getClassLoader().getResource("user_feedback.fxml"));
+        Parent accountprofile = FXMLLoader.load(getClass().getClassLoader().getResource("user_profile.fxml"));
         Scene accountprofileinterface = new Scene(accountprofile, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(accountprofileinterface);
