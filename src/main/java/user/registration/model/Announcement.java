@@ -17,9 +17,12 @@ public class Announcement {
     private boolean RentBox;
     private boolean SwapBox;
     private String path;
+    private String username;
+    private boolean offer;
+    private boolean answer;
 
     public Announcement(String make, String model, String price, String year, String kilometers,
-                        String power, String VehicleType,String FuelType, boolean SellBox, boolean RentBox, boolean SwapBox, String path) {
+                        String power, String VehicleType,String FuelType, boolean SellBox, boolean RentBox, boolean SwapBox, String path,String username,boolean offer) {
         this.make = make;
         this.model = model;
         this.price = price;
@@ -32,6 +35,8 @@ public class Announcement {
         this.RentBox = RentBox;
         this.SwapBox = SwapBox;
         this.path = path;
+        this.username = username;
+        this.offer = offer;
     }
     public Announcement(){}
     public String getMake() {
@@ -87,9 +92,14 @@ public class Announcement {
     public String getFile(){return path;}
     public void setFile( String path){this.path=path;}
 
+    public String getUsername(){return username;}
+    public void setUsername(String username){this.username = username;}
 
+    public boolean getOffer(){return offer;}
+    public void setOffer(boolean offer){this.offer=offer;}
 
-
+    public boolean getAnswer(){return answer;}
+    public void setAnswer(boolean answer){this.answer=answer;}
 
     @Override
     public boolean equals(Object o) {

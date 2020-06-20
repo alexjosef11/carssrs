@@ -15,6 +15,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import user.registration.model.Announcement;
+import user.registration.model.User;
+import user.registration.services.AnnouncementsService;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -22,7 +24,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-import static user.registration.services.AnnouncementsService.USERS_PATH;
+import static user.registration.services.AnnouncementsService.ANNOUNCEMENTS_PATH;
 
 public class AnnouncementsFeedController {
     public static String k="Nothing to schedule";
@@ -41,6 +43,7 @@ public class AnnouncementsFeedController {
     readJsonData();
     ObservableList<Announcement> items = FXCollections.observableArrayList ();
         for(Announcement item : announcements){
+            if(item.getUsername().equals(LoginController.getLoggedUsername())== false)
                     items.add(item);
                     Card.setItems(items);
                 }
@@ -68,7 +71,7 @@ public class AnnouncementsFeedController {
     public void readJsonData() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
 
-       announcements  = objectMapper.readValue(USERS_PATH.toFile(),
+       announcements  = objectMapper.readValue(ANNOUNCEMENTS_PATH.toFile(),
                 new TypeReference<List<Announcement>>() {
                 });
     }
@@ -119,7 +122,7 @@ public class AnnouncementsFeedController {
     }
     @FXML
     public void gotoOfferTab(javafx.event.ActionEvent back) throws IOException {
-        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("user_login.fxml"));
+        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("offer_tab.fxml"));
         Scene adminpinscene = new Scene(rolechoose, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(adminpinscene);
@@ -141,9 +144,24 @@ public class AnnouncementsFeedController {
         window.show();
     }
 
-    public void handleMakeOffer() {
+    public void handleMakeOffer() throws IOException{
+        availability.setText("You made an offer for this car.");
         k="A client is interested about an announcement.";
         q="You will be contacted for a meeting because you were interested about an announcement";
+        ObservableList<Announcement> items = FXCollections.observableArrayList ();
+            List<Announcement> announcement;
+            ObjectMapper objectMapper = new ObjectMapper();
+            announcement = objectMapper.readValue(ANNOUNCEMENTS_PATH.toFile(), new TypeReference<List<Announcement>>(){});
+            for(Announcement item : announcement ){
+                items.add(item);
+            }
+        for(Announcement item2 : announcement) {
+            if(Card.getSelectionModel().getSelectedItem().equals(item2)) {
+                item2.setOffer(true);
+        }
+            ObjectMapper objMap = new ObjectMapper();
+            objMap.writerWithDefaultPrettyPrinter().writeValue(ANNOUNCEMENTS_PATH.toFile(), items);
+        }
     }
     public void minimizeWindow(javafx.event.ActionEvent min) {
         Stage window = (Stage) ((Node)min.getSource()).getScene().getWindow();

@@ -2,8 +2,12 @@ package user.registration.services;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import org.apache.commons.io.FileUtils;
+import user.registration.controllers.ClientInterfaceController;
+import user.registration.controllers.LoginController;
 import user.registration.exceptions.*;
 import user.registration.model.Announcement;
 import java.io.File;
@@ -21,17 +25,19 @@ import java.util.regex.Pattern;
 public class AnnouncementsService {
 
 
-    public static final Path USERS_PATH = FileSystemService.getPathToFile("config", "announcements.json");
+    public static final Path ANNOUNCEMENTS_PATH = FileSystemService.getPathToFile("config", "announcements.json");
 
     private static List<Announcement> Announcements  = new ArrayList<Announcement>();
+    private static String username;
+
 
     public static void loadAnnouncementsFromFile() throws IOException {
     try{
-        if (!Files.exists(USERS_PATH)) {
-            FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("announcements.json"), USERS_PATH.toFile());
+        if (!Files.exists(ANNOUNCEMENTS_PATH)) {
+            FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("announcements.json"), ANNOUNCEMENTS_PATH.toFile());
         }
         ObjectMapper objectMapper = new ObjectMapper();
-        Announcements = objectMapper.readValue(USERS_PATH.toFile(), new TypeReference<List<Announcement>>() {});}catch (IOException ex){
+        Announcements = objectMapper.readValue(ANNOUNCEMENTS_PATH.toFile(), new TypeReference<List<Announcement>>() {});}catch (IOException ex){
     }
     }
 
@@ -41,8 +47,8 @@ public class AnnouncementsService {
                                        String power, String VehicleType, String FuelType, boolean state, boolean rentBoxState, boolean selected, String file)
             throws FieldNotCompletedException {
         checkAllFieldCompleted(make, model, price, year, kilometers, power);
-        Announcements.add(new Announcement(make, model, price, year, kilometers, power,VehicleType,FuelType,state,rentBoxState,selected,file));
-
+        username = LoginController.getLoggedUsername();
+        Announcements.add(new Announcement(make, model, price, year, kilometers, power,VehicleType,FuelType,state,rentBoxState,selected,file,username,false));
         persistAnnouncement();
     }
 
@@ -57,7 +63,7 @@ public class AnnouncementsService {
     public static void persistAnnouncement() {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(USERS_PATH.toFile(), Announcements);
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(ANNOUNCEMENTS_PATH.toFile(), Announcements);
         } catch (IOException e) {
             throw new CouldNotWriteUsersException();
         }

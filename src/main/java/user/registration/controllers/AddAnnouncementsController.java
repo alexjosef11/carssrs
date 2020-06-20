@@ -1,5 +1,7 @@
 package user.registration.controllers;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -12,16 +14,20 @@ import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import user.registration.exceptions.FieldNotCompletedException;
+import user.registration.model.Announcement;
+import user.registration.model.User;
 import user.registration.services.AnnouncementsService;
+import user.registration.services.FileSystemService;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.util.List;
+
+import static user.registration.services.AnnouncementsService.ANNOUNCEMENTS_PATH;
 
 public class AddAnnouncementsController {
-    /*
-    ObservableList<String>  VehicleTypeList = FXCollections.observableArrayList("Cabriolet","Estate","Saloon","Hatchback","Coupe","SUV","Van");
-    ObservableList<String>  FuelTypeList = FXCollections.observableArrayList("Diesel","Petrol","Electric");
-    */
+
     private double xOffset = 0;
     private double yOffset = 0;
     @FXML
@@ -133,7 +139,6 @@ public class AddAnnouncementsController {
             });
             window.show();
         }
-
     public void minimizeWindow(javafx.event.ActionEvent min) {
         Stage window = (Stage) ((Node)min.getSource()).getScene().getWindow();
         window.setIconified(true);
