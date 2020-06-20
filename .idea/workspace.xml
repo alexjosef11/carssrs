@@ -27,7 +27,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="[CSRS-12]As_an_Admin_I-want_to_be_able_to_see_the_Transaction_tab.Merged with master.I fixed the build errors.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/add_announcements.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/add_announcements.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarsSRS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CarsSRS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AdminPinRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AdminPinRegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/ClientInterfaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/ClientInterfaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/services/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/services/FileSystemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +82,9 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="D:\FACULATATE ANUL II\CARSSRS2\target\site" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -92,7 +102,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="CSRS-12_As_an_Admin_I_want_to_be_able_to_see_the_Transaction_Tab" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,7 +141,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/site" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -147,25 +157,25 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\40734\IdeaProjects\src\main\java\user\registration\controllers" />
-      <recent name="C:\Users\40734\IdeaProjects\src\main\resources" />
-      <recent name="C:\Users\40734\IdeaProjects\src\main\resources\src\main\asdsd" />
-      <recent name="C:\Users\40734\IdeaProjects\src\main\resources\styles" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="user.registration.controllers" />
-      <recent name="user.registration.services" />
-      <recent name="user.registration.exceptions" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alexa\Downloads\VARIANTA BUNA CU UPDATE DE LA IASMIN\src\main\resources" />
       <recent name="C:\Users\alexa\Downloads\carssrs\src\main\resources" />
       <recent name="E:\copie proiect de pe git\src\main\resources" />
       <recent name="C:\Users\40734\IdeaProjects" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="user.registration.controllers" />
+      <recent name="user.registration.services" />
+      <recent name="user.registration.exceptions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\40734\IdeaProjects\src\main\java\user\registration\controllers" />
+      <recent name="C:\Users\40734\IdeaProjects\src\main\resources" />
+      <recent name="C:\Users\40734\IdeaProjects\src\main\resources\src\main\asdsd" />
+      <recent name="C:\Users\40734\IdeaProjects\src\main\resources\styles" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UserServiceTest and 1 more">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -210,6 +220,99 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AdminPinRegisterControllerTest and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarsSRS" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns>
+        <pattern testClass="controllers.AdminPinRegisterControllerTest" />
+        <pattern testClass="services.UserServiceTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminPinRegisterControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarsSRS" />
+      <useClassPathOnly />
+      <extension name="coverage" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controllers" />
+      <option name="MAIN_CLASS_NAME" value="controllers.AdminPinRegisterControllerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarsSRS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controllers" />
+      <option name="MAIN_CLASS_NAME" value="controllers.RegistrationControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarsSRS" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns>
+        <pattern testClass="services.UserServiceTest" />
+        <pattern testClass="controllers.AdminPinRegisterControllerTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarsSRS" />
+      <useClassPathOnly />
+      <extension name="coverage" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.UserServiceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -241,6 +344,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceTest and 1 more" />
+        <item itemvalue="JUnit.AdminPinRegisterControllerTest and 1 more" />
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.AdminPinRegisterControllerTest" />
+        <item itemvalue="JUnit.RegistrationControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -267,6 +379,7 @@
       <workItem from="1592251279695" duration="10345000" />
       <workItem from="1592479116206" duration="2550000" />
       <workItem from="1592653096559" duration="10967000" />
+      <workItem from="1592683475587" duration="12009000" />
     </task>
     <task id="LOCAL-00001" summary="[CSRS-10] Added simple registration for user.">
       <created>1589145873688</created>
@@ -455,6 +568,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="[CSRS-12]As_an_Admin_I-want_to_be_able_to_see_the_Transaction_tab.Merged with master.I fixed the build errors." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="286" y="0" key="#AdminPinRegisterControllerTest" timestamp="1592693020416">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="286" y="0" key="#AdminPinRegisterControllerTest/0.0.1366.728@0.0.1366.728" timestamp="1592693020416" />
+    <state x="286" y="0" key="#AdminPinRegisterControllerTest_and_1_more" timestamp="1592693009824">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="286" y="0" key="#AdminPinRegisterControllerTest_and_1_more/0.0.1366.728@0.0.1366.728" timestamp="1592693009824" />
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1589151673128">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -463,18 +584,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1588618882072" />
+    <state x="286" y="0" key="#UserServiceTest" timestamp="1592692160621">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="286" y="0" key="#UserServiceTest/0.0.1366.728@0.0.1366.728" timestamp="1592692160621" />
     <state x="267" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589141565836">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="267" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1589141565836" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1592684881870">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1592684881870" />
+    <state x="458" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592683541952">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="458" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1592683541952" />
+    <state x="412" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592690993836">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592690993836" />
     <state x="683" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587911579625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="683" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587911579625" />
-    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592661093692">
+    <state x="466" y="258" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592689410325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="258" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1592661093692" />
+    <state x="466" y="258" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1592689410325" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589408003874">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -483,51 +620,55 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486533619" />
-    <state x="529" y="130" width="440" height="510" key="FileChooserDialogImpl" timestamp="1592598172866">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="452" y="110" width="440" height="510" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589403605455" />
-    <state x="529" y="130" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1592598172866" />
-    <state width="1323" height="230" key="GridCell.Tab.0.bottom" timestamp="1592674893877">
+    <state x="452" y="110" width="440" height="510" key="FileChooserDialogImpl" timestamp="1592691607855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="230" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592674893877" />
+    <state x="452" y="110" width="440" height="510" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592691607855" />
+    <state x="529" y="130" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1592598172866" />
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1592695596872">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592695596872" />
     <state width="778" height="206" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592652305586" />
     <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486451085" />
-    <state width="1323" height="230" key="GridCell.Tab.0.center" timestamp="1592674893877">
+    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1592695596871">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="230" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592674893877" />
+    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592695596871" />
     <state width="778" height="206" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1592652305586" />
     <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486451085" />
-    <state width="1323" height="230" key="GridCell.Tab.0.left" timestamp="1592674893876">
+    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1592695596871">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="230" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592674893876" />
+    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592695596871" />
     <state width="778" height="206" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1592652305586" />
     <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486451085" />
-    <state width="1323" height="230" key="GridCell.Tab.0.right" timestamp="1592674893877">
+    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1592695596872">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="230" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592674893877" />
+    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592695596872" />
     <state width="778" height="206" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1592652305586" />
     <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486451085" />
-    <state width="1323" height="187" key="GridCell.Tab.1.bottom" timestamp="1592666709247">
+    <state width="1323" height="245" key="GridCell.Tab.1.bottom" timestamp="1592687826334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="187" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592666709247" />
-    <state width="1323" height="187" key="GridCell.Tab.1.center" timestamp="1592666709247">
+    <state width="1323" height="245" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592687826334" />
+    <state width="1323" height="245" key="GridCell.Tab.1.center" timestamp="1592687826334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="187" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592666709247" />
-    <state width="1323" height="187" key="GridCell.Tab.1.left" timestamp="1592666709247">
+    <state width="1323" height="245" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592687826334" />
+    <state width="1323" height="245" key="GridCell.Tab.1.left" timestamp="1592687826334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="187" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592666709247" />
-    <state width="1323" height="187" key="GridCell.Tab.1.right" timestamp="1592666709247">
+    <state width="1323" height="245" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592687826334" />
+    <state width="1323" height="245" key="GridCell.Tab.1.right" timestamp="1592687826334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="187" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592666709247" />
+    <state width="1323" height="245" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592687826334" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1592683632023">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1592683632023" />
     <state x="129" y="55" key="MergeDialog" timestamp="1592664501909">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -558,10 +699,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="454" y="170" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1589155340455" />
-    <state x="392" y="-7" width="585" height="728" key="find.popup" timestamp="1592147956173">
+    <state x="392" y="-7" width="585" height="728" key="find.popup" timestamp="1592695358770">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="392" y="-7" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1592147956173" />
+    <state x="392" y="-7" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1592695358770" />
     <state x="65" y="0" key="new project wizard" timestamp="1589463110476">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -571,10 +712,10 @@
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1592673136911" />
     <state x="476" y="231" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592487556905" />
-    <state x="345" y="72" width="672" height="678" key="search.everywhere.popup" timestamp="1591737054116">
+    <state x="345" y="72" width="672" height="678" key="search.everywhere.popup" timestamp="1592692165581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="345" y="72" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1591737054116" />
+    <state x="345" y="72" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592692165581" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -583,5 +724,21 @@
         <watch expression="Card.getSelectionModel().getSelectedItems()" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CARSSRS2$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1592690923076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CARSSRS2$AdminPinRegisterControllerTest.ic" NAME="AdminPinRegisterControllerTest Coverage Results" MODIFIED="1592692936813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CARSSRS2$RegistrationControllerTest.ic" NAME="RegistrationControllerTest Coverage Results" MODIFIED="1592684370742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CARSSRS2$UserServiceTest.exec" NAME="UserServiceTest Coverage Results" MODIFIED="1592694836992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CARSSRS2$AdminPinRegisterControllerTest_and_1_more.ic" NAME="AdminPinRegisterControllerTest and 1 more Coverage Results" MODIFIED="1592695452628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CARSSRS2$UserServiceTest_and_1_more.ic" NAME="UserServiceTest and 1 more Coverage Results" MODIFIED="1592695626366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

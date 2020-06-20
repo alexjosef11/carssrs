@@ -137,7 +137,7 @@ public class ClientInterfaceController {
     public void setusername(String username){
         this.usernameField.setText("Welcome, " + LoginController.getLoggedUsername() +"!");
     }
-    public TextField getUsernameField(){return usernameField;}
+
     public void minimizeWindow(javafx.event.ActionEvent min) {
         Stage window = (Stage) ((Node)min.getSource()).getScene().getWindow();
         window.setIconified(true);
