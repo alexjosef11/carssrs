@@ -95,7 +95,7 @@
          </font>
       </TextField>
       <ChoiceBox fx:id="FuelTypeBox" layoutX="393.0" layoutY="331.0" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #5895ff;" />
-      <Button layoutX="153.0" layoutY="375.0" onAction="#handleAddPhoto" prefHeight="28.0" prefWidth="181.0" style="-fx-background-color: #5895ff;" styleClass="register-button" stylesheets="@buttonstyle.css" text="Add Photos" textAlignment="CENTER" textFill="WHITE">
+      <Button layoutX="153.0" layoutY="375.0" onAction="#handleAddPhoto" prefHeight="28.0" prefWidth="181.0" style="-fx-background-color: #5895ff;" styleClass="register-button" stylesheets="@buttonstyle.css" text="*Add Photo" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Calibri Bold Italic" size="15.0" />
          </font>

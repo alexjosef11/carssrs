@@ -46,13 +46,13 @@ public class AnnouncementsService {
     public static void addAnnouncement(String make, String model, String price, String year, String kilometers,
                                        String power, String VehicleType, String FuelType, boolean state, boolean rentBoxState, boolean selected, String file)
             throws FieldNotCompletedException {
-        checkAllFieldCompleted(make, model, price, year, kilometers, power);
+        checkAllFieldCompleted(make, model, price, year, kilometers, power,file);
         username = LoginController.getLoggedUsername();
         Announcements.add(new Announcement(make, model, price, year, kilometers, power,VehicleType,FuelType,state,rentBoxState,selected,file,username,false));
         persistAnnouncement();
     }
 
-    private static void checkAllFieldCompleted(String make, String model, String price, String year, String kilometers,
+    private static void checkAllFieldCompleted(String s, String make, String model, String price, String year, String kilometers,
                                                String power)
             throws FieldNotCompletedException {
         if (make.trim().isEmpty() || model.trim().isEmpty()|| price.trim().isEmpty()||

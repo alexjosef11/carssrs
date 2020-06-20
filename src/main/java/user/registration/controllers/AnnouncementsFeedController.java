@@ -145,22 +145,32 @@ public class AnnouncementsFeedController {
     }
 
     public void handleMakeOffer() throws IOException{
-        availability.setText("You made an offer for this car.");
-        k="A client is interested about an announcement.";
-        q="You will be contacted for a meeting because you were interested about an announcement";
-        ObservableList<Announcement> items = FXCollections.observableArrayList ();
-            List<Announcement> announcement;
-            ObjectMapper objectMapper = new ObjectMapper();
-            announcement = objectMapper.readValue(ANNOUNCEMENTS_PATH.toFile(), new TypeReference<List<Announcement>>(){});
-            for(Announcement item : announcement ){
-                items.add(item);
+        if(Card == null){
+            availability.setText("There are no offers available !");
+        }else {
+            if(Card.getSelectionModel().getSelectedItem()==null){
+                availability.setText("Please select an offer !");
+            }else {
+                availability.setText("You made an offer for this car.");
+                k = "A client is interested about an announcement.";
+                q = "You will be contacted for a meeting because you were interested about an announcement";
+                ObservableList<Announcement> items = FXCollections.observableArrayList();
+                List<Announcement> announcement;
+                ObjectMapper objectMapper = new ObjectMapper();
+                announcement = objectMapper.readValue(ANNOUNCEMENTS_PATH.toFile(), new TypeReference<List<Announcement>>() {
+                });
+                for (Announcement item : announcement) {
+                    items.add(item);
+                }
+
+                for (Announcement item2 : announcement) {
+                        if (Card.getSelectionModel().getSelectedItem().equals(item2)) {
+                            item2.setOffer(true);
+                    }
+                    ObjectMapper objMap = new ObjectMapper();
+                    objMap.writerWithDefaultPrettyPrinter().writeValue(ANNOUNCEMENTS_PATH.toFile(), items);
+                }
             }
-        for(Announcement item2 : announcement) {
-            if(Card.getSelectionModel().getSelectedItem().equals(item2)) {
-                item2.setOffer(true);
-        }
-            ObjectMapper objMap = new ObjectMapper();
-            objMap.writerWithDefaultPrettyPrinter().writeValue(ANNOUNCEMENTS_PATH.toFile(), items);
         }
     }
     public void minimizeWindow(javafx.event.ActionEvent min) {
