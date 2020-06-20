@@ -57,7 +57,7 @@
                 <Font name="Calibri Bold Italic" size="13.0" />
             </font>
         </TextField>
-        <Button layoutX="517.0" layoutY="389.0" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: #5895ff;" styleClass="register-button" stylesheets="@buttonstyle.css" text="Make Offer" textAlignment="CENTER" textFill="WHITE">
+        <Button layoutX="517.0" layoutY="389.0" onAction="#handleMakeOffer" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: #5895ff;" styleClass="register-button" stylesheets="@buttonstyle.css" text="Make Offer" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font name="Calibri Bold Italic" size="15.0" />
             </font>
