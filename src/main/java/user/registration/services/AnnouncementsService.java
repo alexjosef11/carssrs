@@ -27,7 +27,7 @@ public class AnnouncementsService {
 
     public static final Path ANNOUNCEMENTS_PATH = FileSystemService.getPathToFile("config", "announcements.json");
 
-    private static List<Announcement> Announcements  = new ArrayList<Announcement>();
+    public static List<Announcement> Announcements  = new ArrayList<Announcement>();
     private static String username;
 
 

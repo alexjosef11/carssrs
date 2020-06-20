@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import user.registration.model.Announcement;
+import user.registration.services.AnnouncementsService;
 import user.registration.services.FeedbackService;
 import user.registration.services.UserService;
 
@@ -23,6 +25,7 @@ public class Main extends Application {
 
         UserService.loadUsersFromFile();
         FeedbackService.loadFeedbackFromFile();
+        AnnouncementsService.loadAnnouncementsFromFile();
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
         root.setOnMousePressed(event -> {
             xOffset = event.getSceneX();
