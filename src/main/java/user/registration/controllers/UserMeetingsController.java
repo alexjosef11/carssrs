@@ -1,17 +1,18 @@
 package user.registration.controllers;
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AdminScheldue {
 
-    public TextField scheldueMessage;
+
+public class UserMeetingsController {
+
+    public Text meetingsText;
     private double xOffset = 0;
     private double yOffset = 0;
 
@@ -24,9 +25,11 @@ public class AdminScheldue {
         Stage window = (Stage) ((Node)close.getSource()).getScene().getWindow();
         window.close();
     }
-
+    public void refreshMeetings(){
+        meetingsText.setText(AnnouncementsFeedController.q);
+    }
     public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
-        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("admin_interface.fxml"));
+        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("client_interface.fxml"));
         Scene adminpinscene = new Scene(rolechoose, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(adminpinscene);
@@ -49,5 +52,3 @@ public class AdminScheldue {
     }
 
 }
-
-

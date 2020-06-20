@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.AdminScheduleController">
+<AnchorPane prefHeight="465.0" prefWidth="650.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.registration.controllers.UserMeetingsController">
     <children>
         <Pane prefHeight="465.0" prefWidth="131.0" style="-fx-background-color: #5985ff;">
             <children>
@@ -41,7 +41,7 @@
                 </Button>
             </children>
         </HBox>
-        <TextField alignment="BOTTOM_CENTER" editable="false" layoutX="156.0" layoutY="17.0" mouseTransparent="true" prefHeight="35.0" prefWidth="182.0" promptText="Enter specific PIN for Application Owner" style="-fx-background-color: transparent; -fx-border-color: #5985ff; -fx-border-width: 0px 0px 2px 0px;" text="Schedule">
+        <TextField alignment="BOTTOM_CENTER" editable="false" layoutX="156.0" layoutY="17.0" mouseTransparent="true" prefHeight="35.0" prefWidth="182.0" promptText="Enter specific PIN for Application Owner" style="-fx-background-color: transparent; -fx-border-color: #5985ff; -fx-border-width: 0px 0px 2px 0px;" text="Meetings">
             <font>
                 <Font name="Calibri Italic" size="18.0" />
             </font>
@@ -49,11 +49,11 @@
                 <Blend />
             </effect>
         </TextField>
-      <Text fx:id="scheldueText" layoutX="168.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="456.13671875">
+      <Button layoutX="378.0" layoutY="23.0" mnemonicParsing="false" onAction="#refreshMeetings" prefHeight="25.0" prefWidth="61.0" text="Refresh" />
+      <Text fx:id="meetingsText" layoutX="171.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="364.13671875">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <Button layoutX="349.0" layoutY="23.0" mnemonicParsing="false" onAction="#refreshScheldue" text="Refresh" />
     </children>
 </AnchorPane>

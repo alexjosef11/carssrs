@@ -93,7 +93,7 @@ public class ClientInterfaceController {
     }
 
     public void goToMeetingTab(javafx.event.ActionEvent back) throws IOException {
-        Parent meetingtab = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
+        Parent meetingtab = FXMLLoader.load(getClass().getClassLoader().getResource("user_meeting.fxml"));
         Scene meetingtabinterface = new Scene(meetingtab, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(meetingtabinterface);

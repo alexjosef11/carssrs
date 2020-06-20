@@ -25,7 +25,8 @@ import java.util.List;
 import static user.registration.services.AnnouncementsService.USERS_PATH;
 
 public class AnnouncementsFeedController {
-
+    public static String k="Nothing to schedule";
+    public static String q="No meetings";
     private double xOffset = 0;
     private double yOffset = 0;
     @FXML
@@ -52,11 +53,11 @@ public class AnnouncementsFeedController {
         for(Announcement item : announcements ) {
             if(item.equals(Card.getSelectionModel().getSelectedItem()))
             if (item.getRentBox() == true) {
-                status = "This car is avalible for Rent!";
+                status = "This car is available for Rent!";
             } else if (item.getSwapBox() == true) {
-                status = "This car is avalible for Swap!";
+                status = "This car is available for Swap!";
             }else {
-                status = "This car is avalible for Sell!";
+                status = "This car is available for Sell!";
             }
         }
         availability.setText(status);
@@ -118,7 +119,7 @@ public class AnnouncementsFeedController {
     }
     @FXML
     public void gotoOfferTab(javafx.event.ActionEvent back) throws IOException {
-        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("add_announcements.fxml"));
+        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("user_login.fxml"));
         Scene adminpinscene = new Scene(rolechoose, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(adminpinscene);
@@ -138,6 +139,11 @@ public class AnnouncementsFeedController {
             window.setOpacity(1.0f);
         });
         window.show();
+    }
+
+    public void handleMakeOffer() {
+        k="A client is interested about an announcement.";
+        q="You will be contacted for a meeting because you were interested about an announcement";
     }
     public void minimizeWindow(javafx.event.ActionEvent min) {
         Stage window = (Stage) ((Node)min.getSource()).getScene().getWindow();

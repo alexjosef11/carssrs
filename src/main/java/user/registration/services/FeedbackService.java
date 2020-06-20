@@ -40,7 +40,7 @@ public class FeedbackService {
                else
                    FeedbackAdmin.Responses = f.getResponse1() + " " + f.getResponse2() + " " + f.getResponse3() + " " + f.getResponse4() + "\n";
            }
-            System.out.println(FeedbackAdmin.Responses);
+           // System.out.println(FeedbackAdmin.Responses);
        }
 
 
