@@ -53,7 +53,7 @@ public class FeedbackController {
     }
 
     public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
-        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("client_interface.fxml"));
+        Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("user_profile.fxml"));
         Scene adminpinscene = new Scene(rolechoose, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(adminpinscene);
