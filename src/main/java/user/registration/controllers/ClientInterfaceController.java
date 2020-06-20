@@ -16,6 +16,9 @@ public class ClientInterfaceController {
     private double yOffset = 0;
     @FXML
     private TextField usernameField;
+    public void initialize(){
+        setusername(usernameField.getText());
+    }
 
     public void goToAnnouncementsFeed(javafx.event.ActionEvent back) throws IOException {
         Parent announcements = FXMLLoader.load(getClass().getClassLoader().getResource("announcement_feed.fxml"));
@@ -132,7 +135,7 @@ public class ClientInterfaceController {
         window.show();
     }
     public void setusername(String username){
-        this.usernameField.setText("Welcome, " + username+"!");
+        this.usernameField.setText("Welcome, " + LoginController.getLoggedUsername() +"!");
     }
     public TextField getUsernameField(){return usernameField;}
     public void minimizeWindow(javafx.event.ActionEvent min) {

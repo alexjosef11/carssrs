@@ -100,7 +100,7 @@
             <Font name="Calibri Bold Italic" size="15.0" />
          </font>
       </Button>
-      <TextField layoutX="153.0" layoutY="88.0" prefHeight="27.0" prefWidth="238.0" style="-fx-background-color: transaprent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" text="*Select the announcement type :">
+      <TextField layoutX="153.0" layoutY="88.0" prefHeight="27.0" prefWidth="238.0" style="-fx-background-color: transparent; -fx-border-color: #5895ff; -fx-border-width: 0px 0px 2px 0px;" text="*Select the announcement type :">
          <font>
             <Font name="Calibri Italic" size="13.0" />
          </font>

@@ -16,9 +16,12 @@ public class AdminInterfaceController {
     private double yOffset = 0;
     @FXML
     private TextField usernameField;
+    public void initialize(){
+        setusername(usernameField.getText());
+    }
 
     public void goToTranzactionTab(javafx.event.ActionEvent back) throws IOException {
-        Parent announcements = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
+        Parent announcements = FXMLLoader.load(getClass().getClassLoader().getResource("transaction_tab.fxml"));
         Scene announcementFeed = new Scene(announcements, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(announcementFeed);
@@ -110,7 +113,7 @@ public class AdminInterfaceController {
     }
 
     public void setusername(String username){
-        this.usernameField.setText(username);
+        this.usernameField.setText("Welcome Admin, " + LoginController.getLoggedUsername() +"!");
     }
 
     public void minimizeWindow(javafx.event.ActionEvent min) {

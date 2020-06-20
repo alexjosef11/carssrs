@@ -43,28 +43,33 @@ public class AnnouncementsFeedController {
     readJsonData();
     ObservableList<Announcement> items = FXCollections.observableArrayList ();
         for(Announcement item : announcements){
-            if(item.getUsername().equals(LoginController.getLoggedUsername())== false)
+            if((item.getUsername().equals(LoginController.getLoggedUsername())== false)&&(item.getAnswer()==false))
                     items.add(item);
                     Card.setItems(items);
                 }
         }
     public void handlemouseclick()throws IOException{
-        Card.getSelectionModel().getSelectedItem();
-        Path path = Paths.get(Card.getSelectionModel().getSelectedItem().getFile());
-        imageView.setImage(new Image(Files.newInputStream(path)));
-        String status = "";
-        for(Announcement item : announcements ) {
-            if(item.equals(Card.getSelectionModel().getSelectedItem()))
-            if (item.getRentBox() == true) {
-                status = "This car is available for Rent!";
-            } else if (item.getSwapBox() == true) {
-                status = "This car is available for Swap!";
-            }else {
-                status = "This car is available for Sell!";
+        if(Card==null) {
+            availability.setText(" ");
+        }else if(Card.getSelectionModel().getSelectedItem()==null) {
+            availability.setText(" ");
+        }else {
+            Card.getSelectionModel().getSelectedItem();
+            Path path = Paths.get(Card.getSelectionModel().getSelectedItem().getFile());
+            imageView.setImage(new Image(Files.newInputStream(path)));
+            String status = "";
+            for (Announcement item : announcements) {
+                if (item.equals(Card.getSelectionModel().getSelectedItem()))
+                    if (item.getRentBox() == true) {
+                        status = "This car is available for Rent!";
+                    } else if (item.getSwapBox() == true) {
+                        status = "This car is available for Swap!";
+                    } else {
+                        status = "This car is available for Sell!";
+                    }
             }
+            availability.setText(status);
         }
-        availability.setText(status);
-
 
     }
 
