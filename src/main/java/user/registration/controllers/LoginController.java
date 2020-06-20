@@ -1,5 +1,7 @@
 package user.registration.controllers;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -10,13 +12,16 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import user.registration.exceptions.*;
+import user.registration.model.Announcement;
 import user.registration.model.User;
 import user.registration.services.UserService;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.util.List;
 import java.util.Objects;
 
+import static user.registration.services.AnnouncementsService.ANNOUNCEMENTS_PATH;
 import static user.registration.services.UserService.users;
 
 public class LoginController {
@@ -33,6 +38,7 @@ public class LoginController {
     private PasswordField passwordconfirmField;
     private String role;
     private static String loggedUsername;
+
     @FXML
     public void handleLoginAction(javafx.event.ActionEvent clientinterface) throws IOException {
         try {
@@ -41,7 +47,7 @@ public class LoginController {
             for (User user : users) {
                 if (Objects.equals(usernameField.getText(), user.getUsername())) {
                     this.role = user.getRole();
-                    this.loggedUsername=user.getUsername();
+                    this.loggedUsername = user.getUsername();
                 }
             }
             if (role.equals("Client")) {
@@ -49,7 +55,7 @@ public class LoginController {
                 Loader.setLocation(getClass().getClassLoader().getResource("client_interface.fxml"));
                 Parent viewclientinterface = Loader.load();
                 ClientInterfaceController clientInterfaceController = Loader.getController();
-                clientInterfaceController.setusername("Welcome, " + usernameField.getText() + "!");
+                clientInterfaceController.setusername(usernameField.getText());
                 Scene clientregisterscene = new Scene(viewclientinterface, 650, 465);
                 Stage window = (Stage) ((Node) clientinterface.getSource()).getScene().getWindow();
                 viewclientinterface.setOnMousePressed(event -> {
@@ -134,7 +140,6 @@ public class LoginController {
         window.show();
     }
     public static String getLoggedUsername(){return loggedUsername;}
-
     public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
         Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
         Scene adminpinscene = new Scene(rolechoose, 650, 465);

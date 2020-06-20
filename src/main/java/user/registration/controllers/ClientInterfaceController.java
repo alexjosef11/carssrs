@@ -5,14 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import user.registration.exceptions.PasswordConfirmationException;
-import user.registration.exceptions.UsernameDoesNotExistsException;
-import user.registration.exceptions.WrongPasswordException;
-import user.registration.services.UserService;
 
 import java.io.IOException;
 
@@ -70,7 +64,7 @@ public class ClientInterfaceController {
     }
 
     public void goToOfferTab(javafx.event.ActionEvent back) throws IOException {
-        Parent ofertab = FXMLLoader.load(getClass().getClassLoader().getResource("login_signup.fxml"));
+        Parent ofertab = FXMLLoader.load(getClass().getClassLoader().getResource("offer_tab.fxml"));
         Scene ofertabinterface = new Scene(ofertab, 650, 465);
         Stage window = (Stage) ((Node)back.getSource()).getScene().getWindow();
         window.setScene(ofertabinterface);
@@ -138,9 +132,9 @@ public class ClientInterfaceController {
         window.show();
     }
     public void setusername(String username){
-        this.usernameField.setText(username);
+        this.usernameField.setText("Welcome, " + username+"!");
     }
-
+    public TextField getUsernameField(){return usernameField;}
     public void minimizeWindow(javafx.event.ActionEvent min) {
         Stage window = (Stage) ((Node)min.getSource()).getScene().getWindow();
         window.setIconified(true);
