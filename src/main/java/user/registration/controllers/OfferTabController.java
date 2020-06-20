@@ -40,17 +40,22 @@ public class OfferTabController {
     readJsonData();
     ObservableList<Announcement> items = FXCollections.observableArrayList ();
         for(Announcement item : announcements){
-            if((item.getUsername().equals(LoginController.getLoggedUsername())==true)||(item.getOffer()==true))
+            if((item.getUsername().equals(LoginController.getLoggedUsername())==true)&&(item.getOffer()==true)&&(item.getAnswer()==false))
                     items.add(item);
                     Card.setItems(items);
                 }
         }
     public void handlemouseclick()throws IOException{
-        Card.getSelectionModel().getSelectedItem();
-        Path path = Paths.get(Card.getSelectionModel().getSelectedItem().getFile());
-        imageView.setImage(new Image(Files.newInputStream(path)));
-        availability.setText("You have an offer for this car! ");
-
+        if(Card==null) {
+            availability.setText(" ");
+        }else if(Card.getSelectionModel().getSelectedItem()==null) {
+            availability.setText(" ");
+        }else {
+            Card.getSelectionModel().getSelectedItem();
+            Path path = Paths.get(Card.getSelectionModel().getSelectedItem().getFile());
+            imageView.setImage(new Image(Files.newInputStream(path)));
+            availability.setText("You have an offer for this car! ");
+        }
     }
 
     public void readJsonData() throws IOException {
@@ -106,38 +111,52 @@ public class OfferTabController {
         window.show();
     }
     public void AcceptButton() throws IOException{
-        availability.setText("You have accepted this offer! ");
-            ObservableList<Announcement> items = FXCollections.observableArrayList ();
-            List<Announcement> announcement;
-            ObjectMapper objectMapper = new ObjectMapper();
-            announcement = objectMapper.readValue(ANNOUNCEMENTS_PATH.toFile(), new TypeReference<List<Announcement>>(){});
-            for(Announcement item : announcement ){
-                items.add(item);
-            }
-            for(Announcement item2 : announcement) {
-                if(Card.getSelectionModel().getSelectedItem().equals(item2)) {
-                    item2.setAnswer(true);
+        if(Card==null) {
+            availability.setText("You have nothing to accept !");
+        }else if(Card.getSelectionModel().getSelectedItem()==null) {
+                availability.setText("Please select an offer to accept!");
+            }else{
+                availability.setText("You have accepted this offer! ");
+                ObservableList<Announcement> items = FXCollections.observableArrayList();
+                List<Announcement> announcement;
+                ObjectMapper objectMapper = new ObjectMapper();
+                announcement = objectMapper.readValue(ANNOUNCEMENTS_PATH.toFile(), new TypeReference<List<Announcement>>() {
+                });
+                for (Announcement item : announcement) {
+                    items.add(item);
                 }
-                ObjectMapper objMap = new ObjectMapper();
-                objMap.writerWithDefaultPrettyPrinter().writeValue(ANNOUNCEMENTS_PATH.toFile(), items);
+                for (Announcement item2 : announcement) {
+                    if (Card.getSelectionModel().getSelectedItem().equals(item2)) {
+                        item2.setAnswer(true);
+                    }
+                    ObjectMapper objMap = new ObjectMapper();
+                    objMap.writerWithDefaultPrettyPrinter().writeValue(ANNOUNCEMENTS_PATH.toFile(), items);
+                }
             }
         }
 
     public void DenyButton() throws IOException{
-        availability.setText("You have denied this offer! ");
-        ObservableList<Announcement> items = FXCollections.observableArrayList ();
-        List<Announcement> announcement;
-        ObjectMapper objectMapper = new ObjectMapper();
-        announcement = objectMapper.readValue(ANNOUNCEMENTS_PATH.toFile(), new TypeReference<List<Announcement>>(){});
-        for(Announcement item : announcement ){
-            items.add(item);
-        }
-        for(Announcement item2 : announcement) {
-            if(Card.getSelectionModel().getSelectedItem().equals(item2)) {
-                item2.setAnswer(false);
+        if(Card==null) {
+            availability.setText("You have nothing to deny !");
+        }else if(Card.getSelectionModel().getSelectedItem()==null) {
+            availability.setText("Please select an offer to deny!");
+        }else {
+            availability.setText("You have denied this offer! ");
+            ObservableList<Announcement> items = FXCollections.observableArrayList();
+            List<Announcement> announcement;
+            ObjectMapper objectMapper = new ObjectMapper();
+            announcement = objectMapper.readValue(ANNOUNCEMENTS_PATH.toFile(), new TypeReference<List<Announcement>>() {
+            });
+            for (Announcement item : announcement) {
+                items.add(item);
             }
-            ObjectMapper objMap = new ObjectMapper();
-            objMap.writerWithDefaultPrettyPrinter().writeValue(ANNOUNCEMENTS_PATH.toFile(), items);
+            for (Announcement item2 : announcement) {
+                if (Card.getSelectionModel().getSelectedItem().equals(item2)) {
+                    item2.setAnswer(false);
+                }
+                ObjectMapper objMap = new ObjectMapper();
+                objMap.writerWithDefaultPrettyPrinter().writeValue(ANNOUNCEMENTS_PATH.toFile(), items);
+            }
         }
     }
     public void minimizeWindow(javafx.event.ActionEvent min) {
