@@ -25,14 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="[CSRS-8]As_a_user_I-want_to_be_able_to_see_the_Offer_tab.Merged with master.">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="[CSRS-12]As_an_Admin_I-want_to_be_able_to_see_the_Transaction_tab.Merged with master.I also fixed many minor bugs form previous files.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AdminInterfaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AdminInterfaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AnnouncementsFeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AnnouncementsFeedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/ClientInterfaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/ClientInterfaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/OfferTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/OfferTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/add_announcements.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/add_announcements.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -392,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592667073099</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[CSRS-12]As_an_Admin_I-want_to_be_able_to_see_the_Transaction_tab.Merged with master.I also fixed many minor bugs form previous files.">
+      <created>1592673178247</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1592673178247</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +443,8 @@
     <MESSAGE value="[CSRS-4]_AnnouncementsFeed. Merged with Master." />
     <MESSAGE value="[CSRS-65]-Feedback from clients &amp; [CSRS-69]-An admin can see the feedback from clients Merged with Master." />
     <MESSAGE value="[CSRS-8]As_a_user_I-want_to_be_able_to_see_the_Offer_tab.Merged with master." />
-    <option name="LAST_COMMIT_MESSAGE" value="[CSRS-8]As_a_user_I-want_to_be_able_to_see_the_Offer_tab.Merged with master." />
+    <MESSAGE value="[CSRS-12]As_an_Admin_I-want_to_be_able_to_see_the_Transaction_tab.Merged with master.I also fixed many minor bugs form previous files." />
+    <option name="LAST_COMMIT_MESSAGE" value="[CSRS-12]As_an_Admin_I-want_to_be_able_to_see_the_Transaction_tab.Merged with master.I also fixed many minor bugs form previous files." />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1589151673128">
@@ -533,10 +536,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="497" y="277" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1592151277320" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592667084500">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592673187014">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592667084500" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592673187014" />
     <state x="323" y="115" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1592493609093" />
     <state x="387" y="139" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486543535" />
     <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589154007697">
@@ -555,10 +558,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1589463110476" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1592656189876">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1592673136911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1592656189876" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1592673136911" />
     <state x="476" y="231" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592487556905" />
     <state x="345" y="72" width="672" height="678" key="search.everywhere.popup" timestamp="1591737054116">
       <screen x="0" y="0" width="1366" height="728" />
