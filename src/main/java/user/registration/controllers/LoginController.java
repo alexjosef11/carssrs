@@ -77,8 +77,6 @@ public class LoginController {
                 FXMLLoader Loader = new FXMLLoader();
                 Loader.setLocation(getClass().getClassLoader().getResource("admin_interface.fxml"));
                 Parent viewadmininterface = Loader.load();
-                //AdminInterfaceController adminInterfaceController = Loader.getController();
-                //adminInterfaceController.setusername("Welcome Admin, " + usernameField.getText() + "!");
                 Scene clientregisterscene = new Scene(viewadmininterface, 650, 465);
                 Stage window = (Stage) ((Node) clientinterface.getSource()).getScene().getWindow();
                 viewadmininterface.setOnMousePressed(event -> {
