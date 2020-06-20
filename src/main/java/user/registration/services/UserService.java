@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 
 public class UserService {
 
-    private static final Path USERS_PATH = FileSystemService.getPathToFile("config", "users.json");
+    public static final Path USERS_PATH = FileSystemService.getPathToFile("config", "users.json");
     public static List<User> users;
 
     public static void loadUsersFromFile() throws IOException {
@@ -49,15 +49,15 @@ public class UserService {
         checkPassword(password,username);
     }
 
-    private static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
+    public static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
         for (User user : users) {
             if (Objects.equals(username, user.getUsername()))
                 throw new UsernameAlreadyExistsException(username);
         }
     }
 
-    private static void checkAllFieldCompleted(String username, String password, String firstname, String passwordconfirm,
-                                           String secondname, String phonenumber)
+    public static void checkAllFieldCompleted(String username, String password, String firstname, String passwordconfirm,
+                                              String secondname, String phonenumber)
             throws FieldNotCompletedException {
         if (username.trim().isEmpty() || password.trim().isEmpty()|| firstname.trim().isEmpty()||
                 passwordconfirm.trim().isEmpty()|| phonenumber.trim().isEmpty()|| secondname.trim().isEmpty()) {
@@ -65,13 +65,13 @@ public class UserService {
         }
     }
 
-    private static void checkPasswordsMach(String password, String passwordconfirm) throws PasswordConfirmationException {
+    public static void checkPasswordsMach(String password, String passwordconfirm) throws PasswordConfirmationException {
         if (!password.trim().equals(passwordconfirm.trim())) {
             throw new PasswordConfirmationException();
         }
     }
 
-    private static void checkPasswordformatException(String password) throws WeekPasswordException {
+    public static void checkPasswordformatException(String password) throws WeekPasswordException {
         if (password.length()<8)
             throw new WeekPasswordException("8 characters");
         if (!stringContainsNumber(password))
@@ -82,15 +82,15 @@ public class UserService {
             throw new WeekPasswordException("one special character");
     }
 
-    private static boolean stringContainsNumber( String s )
+    public static boolean stringContainsNumber(String s)
     {
         return Pattern.compile( "[0-9]" ).matcher( s ).find();
     }
-    private static boolean stringContainsUpperCase( String s )
+    public static boolean stringContainsUpperCase(String s)
     {
         return Pattern.compile( "[A-Z]" ).matcher( s ).find();
     }
-    private static boolean stringContainsSpecialCaracter( String s )
+    public static boolean stringContainsSpecialCaracter(String s)
     {
         return Pattern.compile( "[!@#$%&*()_+=|<>?{}\\\\[\\\\]~-]" ).matcher( s ).find();
     }
@@ -103,7 +103,7 @@ public class UserService {
         }
     }
 
-    private static String encodePassword(String salt, String password) {
+    public static String encodePassword(String salt, String password) {
         MessageDigest md = getMessageDigest();
         md.update(salt.getBytes(StandardCharsets.UTF_8));
 
@@ -124,7 +124,7 @@ public class UserService {
         return md;
     }
 
-    private static void checkUserDoesAlreadyExist(String username) throws UsernameDoesNotExistsException {
+    public static void checkUserDoesAlreadyExist(String username) throws UsernameDoesNotExistsException {
         int ok=0;
         for (User user : users) {
             if (Objects.equals(username, user.getUsername()))
@@ -135,7 +135,7 @@ public class UserService {
         }
     }
 
-    private static void checkPassword(String password, String username) throws WrongPasswordException {
+    public static void checkPassword(String password, String username) throws WrongPasswordException {
         int ok=0;
         for (User user : users) {
             if (Objects.equals(username, user.getUsername())) {
@@ -147,6 +147,10 @@ public class UserService {
         if(ok==0) {
                 throw new WrongPasswordException();
             }
+    }
+
+    public static List<User> getUsers() {
+        return users;
     }
 
 }
