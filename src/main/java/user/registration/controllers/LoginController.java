@@ -32,7 +32,7 @@ public class LoginController {
     @FXML
     private PasswordField passwordconfirmField;
     private String role;
-
+    private static String loggedUsername;
     @FXML
     public void handleLoginAction(javafx.event.ActionEvent clientinterface) throws IOException {
         try {
@@ -41,6 +41,7 @@ public class LoginController {
             for (User user : users) {
                 if (Objects.equals(usernameField.getText(), user.getUsername())) {
                     this.role = user.getRole();
+                    this.loggedUsername=user.getUsername();
                 }
             }
             if (role.equals("Client")) {
@@ -132,6 +133,7 @@ public class LoginController {
         });
         window.show();
     }
+    public static String getLoggedUsername(){return loggedUsername;}
 
     public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
         Parent rolechoose = FXMLLoader.load(getClass().getClassLoader().getResource("role_choose_register.fxml"));
