@@ -171,7 +171,7 @@
       <recent name="C:\Users\40734\IdeaProjects" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdminScheduleControllerTest and 4 more">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -212,6 +212,32 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddAnnouncemetsControllerTest and 12 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CarsSRS" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns>
+        <pattern testClass="Controllers.AddAnnouncemetsControllerTest" />
+        <pattern testClass="controllers.AdminPinRegisterControllerTest" />
+        <pattern testClass="controllers.AdminScheduleControllerTest" />
+        <pattern testClass="Controllers.AnnouncementsFeedControllerTest" />
+        <pattern testClass="controllers.FeedbackControllerTest" />
+        <pattern testClass="Controllers.OfferTabControllerTest" />
+        <pattern testClass="controllers.ProfileControllerTest" />
+        <pattern testClass="Controllers.TransactionTabControllerTest" />
+        <pattern testClass="controllers.UserMeetingsControllerTest" />
+        <pattern testClass="services.*" />
+        <pattern testClass="Services.AnnouncementServiceTest" />
+        <pattern testClass="services.FeedbackServiceTest" />
+        <pattern testClass="services.UserServiceTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -289,25 +315,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMeetingsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CarsSRS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="controllers" />
-      <option name="MAIN_CLASS_NAME" value="controllers.UserMeetingsControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -341,11 +348,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddAnnouncemetsControllerTest and 12 more" />
         <item itemvalue="JUnit.AdminScheduleControllerTest and 4 more" />
         <item itemvalue="JUnit.ProfileControllerTest" />
         <item itemvalue="JUnit.AdminScheduleControllerTest and 3 more" />
         <item itemvalue="JUnit.AdminScheduleControllerTest" />
-        <item itemvalue="JUnit.UserMeetingsControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -713,6 +720,7 @@
     <SUITE FILE_PATH="coverage/FIS_final$ProfileControllerTest.ic" NAME="ProfileControllerTest Coverage Results" MODIFIED="1592697594452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>controllers.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Proiect_FIS_GATA$AddAnnouncemetsControllerTest_and_12_more.ic" NAME="AddAnnouncemetsControllerTest and 12 more Coverage Results" MODIFIED="1592698515119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/FIS_final$AdminScheduleControllerTest_and_3_more.ic" NAME="AdminScheduleControllerTest and 3 more Coverage Results" MODIFIED="1592696433090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/FIS_final$FeedbackServiceTest.ic" NAME="FeedbackServiceTest Coverage Results" MODIFIED="1592691703100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>services.*</FILTER>
