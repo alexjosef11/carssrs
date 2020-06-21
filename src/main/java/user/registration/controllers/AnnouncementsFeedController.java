@@ -32,11 +32,11 @@ public class AnnouncementsFeedController {
     private double xOffset = 0;
     private double yOffset = 0;
     @FXML
-    private Text availability ;
+    public Text availability ;
     @FXML
-    private ListView<Announcement> Card= new ListView<Announcement>();
+    public ListView<Announcement> Card= new ListView<Announcement>();
     @FXML
-    private ImageView imageView = new ImageView();
+    public ImageView imageView = new ImageView();
     private static List<Announcement> announcements ;
     @FXML
     public void initialize() throws IOException {

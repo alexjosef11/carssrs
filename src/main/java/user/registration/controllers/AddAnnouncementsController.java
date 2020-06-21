@@ -31,33 +31,33 @@ public class AddAnnouncementsController {
     private double xOffset = 0;
     private double yOffset = 0;
     @FXML
-    private Text AddAnnouncementMessage;
+    public Text AddAnnouncementMessage;
     @FXML
-    private TextField makeField;
+    public TextField makeField;
     @FXML
-    private TextField modelField;
+    public TextField modelField;
     @FXML
-    private TextField priceField;
+    public TextField priceField;
     @FXML
-    private TextField yearField;
+    public TextField yearField;
     @FXML
-    private TextField kilometersField;
+    public TextField kilometersField;
     @FXML
-    private TextField powerField;
+    public TextField powerField;
     @FXML
-    private ChoiceBox VehicleTypeBox;
+    public ChoiceBox VehicleTypeBox;
     @FXML
-    private ChoiceBox FuelTypeBox;
+    public ChoiceBox FuelTypeBox;
     @FXML
-    private CheckBox SellBox;
+    public CheckBox SellBox;
     @FXML
-    private CheckBox RentBox;
+    public CheckBox RentBox;
     @FXML
-    private CheckBox SwapBox;
+    public CheckBox SwapBox;
     @FXML
-    private File file;
+    public File file;
     @FXML
-    private String path ;
+    public String path ;
 
     @FXML
     public void initialize(){
@@ -100,7 +100,7 @@ public class AddAnnouncementsController {
         try {
             AnnouncementsService.addAnnouncement(makeField.getText(), modelField.getText(), priceField.getText(),
                     yearField.getText(), kilometersField.getText(), powerField.getText(), (String) VehicleTypeBox.getValue(), (String) FuelTypeBox.getValue(), SellBox.isSelected(), RentBox.isSelected(), SwapBox.isSelected(), path);
-            AddAnnouncementMessage.setText("Announcements created sucessfully!");
+            AddAnnouncementMessage.setText("Announcement created sucessfully!");
             makeField.clear();
             modelField.clear();
             priceField.clear();
