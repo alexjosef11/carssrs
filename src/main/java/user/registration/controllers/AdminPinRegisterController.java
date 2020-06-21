@@ -19,7 +19,7 @@ public class AdminPinRegisterController{
     @FXML
     public PasswordField passwordconfirmField;
     @FXML
-    public Text PinMessage;
+    public static Text PinMessage;
 
     @FXML
     public void goBackToRoleChooseScene(javafx.event.ActionEvent back) throws IOException {
@@ -79,7 +79,7 @@ public class AdminPinRegisterController{
         }
     }
 
-    private void checkPin(String password) throws PinIncorrectException {
+    public static void checkPin(String password) throws PinIncorrectException {
         if (!password.trim().equals("PinAdmin1234!")) {
             PinMessage.setText("Pin is not correct!");
                 throw new PinIncorrectException();

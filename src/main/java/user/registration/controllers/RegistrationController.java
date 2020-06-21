@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -20,26 +21,30 @@ import java.io.IOException;
 
 public class RegistrationController {
 
+
     private double xOffset = 0;
     private double yOffset = 0;
     @FXML
-    private Text registrationMessage;
+    public
+    Text registrationMessage;
     @FXML
-    private TextField roleField;
+    TextField roleField;
     @FXML
-    private TextField usernameField;
+    public
+    TextField usernameField;
     @FXML
-    private PasswordField passwordField;
+    public
+    PasswordField passwordField;
     @FXML
-    private PasswordField passwordconfirmField;
+    PasswordField passwordconfirmField;
     @FXML
-    private TextField firstnameField;
+    TextField firstnameField;
     @FXML
-    private TextField secondnameField;
+    TextField secondnameField;
     @FXML
-    private TextField phonenumberField;
+    TextField phonenumberField;
     @FXML
-    private TextField addressField;
+    TextField addressField;
 
 
     @FXML

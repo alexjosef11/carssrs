@@ -29,7 +29,7 @@ public class OfferTabController {
     private double xOffset = 0;
     private double yOffset = 0;
     @FXML
-    private Text availability ;
+    public Text availability ;
     @FXML
     private ListView<Announcement> Card= new ListView<Announcement>();
     @FXML
