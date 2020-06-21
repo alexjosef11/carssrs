@@ -21,8 +21,8 @@ import java.util.regex.Pattern;
 
 public class FeedbackService {
 
-    private static final Path USERS_PATH = FileSystemService.getPathToFile("config", "feedback.json");
-    private static List<Feedback> feedback=new ArrayList<Feedback>();
+    public static final Path USERS_PATH = FileSystemService.getPathToFile("config", "feedback.json");
+    public static List<Feedback> feedback=new ArrayList<Feedback>();
        public static void loadFeedbackFromFile() throws IOException {
 
            if (!Files.exists(USERS_PATH)) {
@@ -72,4 +72,5 @@ public class FeedbackService {
             throw new CouldNotWriteUsersException();
         }
     }
+
 }
