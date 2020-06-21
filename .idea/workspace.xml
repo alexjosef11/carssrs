@@ -27,15 +27,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Fixing some very minor bugs.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarsSRS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CarsSRS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AddAnnouncementsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AddAnnouncementsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AnnouncementsFeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/AnnouncementsFeedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/OfferTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/OfferTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/controllers/TransactionTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/controllers/TransactionTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/services/AnnouncementsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/services/AnnouncementsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/registration/services/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/registration/services/FileSystemService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +171,7 @@
       <recent name="C:\Users\40734\IdeaProjects" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddAnnouncemetsControllerTest and 5 more">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -266,21 +257,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddAnnouncemetsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminPinRegisterControllerTest and 6 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CarsSRS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Controllers" />
-      <option name="MAIN_CLASS_NAME" value="Controllers.AddAnnouncemetsControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="pattern" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
+      <patterns>
+        <pattern testClass="controllers.AdminPinRegisterControllerTest" />
+        <pattern testClass="Controllers.AddAnnouncemetsControllerTest" />
+        <pattern testClass="Controllers.AnnouncementsFeedControllerTest" />
+        <pattern testClass="Controllers.OfferTabControllerTest" />
+        <pattern testClass="Controllers.TransactionTabControllerTest" />
+        <pattern testClass="Services.AnnouncementServiceTest" />
+        <pattern testClass="services.UserServiceTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -378,11 +370,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminPinRegisterControllerTest and 6 more" />
         <item itemvalue="JUnit.AddAnnouncemetsControllerTest and 5 more" />
         <item itemvalue="JUnit.TransactionTabControllerTest" />
         <item itemvalue="JUnit.OfferTabControllerTest" />
         <item itemvalue="JUnit.AnnouncementsFeedControllerTest" />
-        <item itemvalue="JUnit.AddAnnouncemetsControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -648,28 +640,28 @@
     </state>
     <state x="452" y="110" width="440" height="510" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592693182658" />
     <state x="529" y="130" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1592598172866" />
-    <state width="1323" height="103" key="GridCell.Tab.0.bottom" timestamp="1592697052996">
+    <state width="1323" height="103" key="GridCell.Tab.0.bottom" timestamp="1592697662619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="103" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592697052996" />
+    <state width="1323" height="103" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592697662619" />
     <state width="778" height="206" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1592652305586" />
     <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486451085" />
-    <state width="1323" height="103" key="GridCell.Tab.0.center" timestamp="1592697052996">
+    <state width="1323" height="103" key="GridCell.Tab.0.center" timestamp="1592697662619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="103" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592697052996" />
+    <state width="1323" height="103" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592697662619" />
     <state width="778" height="206" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1592652305586" />
     <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486451085" />
-    <state width="1323" height="103" key="GridCell.Tab.0.left" timestamp="1592697052996">
+    <state width="1323" height="103" key="GridCell.Tab.0.left" timestamp="1592697662619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="103" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592697052996" />
+    <state width="1323" height="103" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592697662619" />
     <state width="778" height="206" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1592652305586" />
     <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486451085" />
-    <state width="1323" height="103" key="GridCell.Tab.0.right" timestamp="1592697052996">
+    <state width="1323" height="103" key="GridCell.Tab.0.right" timestamp="1592697662619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="103" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592697052996" />
+    <state width="1323" height="103" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592697662619" />
     <state width="778" height="206" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1592652305586" />
     <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592486451085" />
     <state width="1323" height="187" key="GridCell.Tab.1.bottom" timestamp="1592666709247">
@@ -692,10 +684,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="55" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1592664501909" />
-    <state x="321" y="125" key="MultipleFileMergeDialog" timestamp="1592664514686">
+    <state x="321" y="125" key="MultipleFileMergeDialog" timestamp="1592697533827">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="125" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1592664514686" />
+    <state x="321" y="125" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1592697533827" />
     <state x="56" y="18" width="916" height="710" key="SettingsEditor" timestamp="1592682543025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -722,6 +714,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="-7" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1592147956173" />
+    <state x="-5" y="120" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592697501312">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-5" y="120" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.728@0.0.1366.728" timestamp="1592697501312" />
     <state x="65" y="0" key="new project wizard" timestamp="1589463110476">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -745,9 +741,20 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/VARIANTA_BUNA_CU_UPDATE_DE_LA_IASMIN$AddAnnouncemetsControllerTest_and_5_more.ic" NAME="AddAnnouncemetsControllerTest and 5 more Coverage Results" MODIFIED="1592694392030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/VARIANTA_BUNA_CU_UPDATE_DE_LA_IASMIN$TransactionTabControllerTest.ic" NAME="TransactionTabControllerTest Coverage Results" MODIFIED="1592693121662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Controllers.*</FILTER>
+    <SUITE FILE_PATH="coverage/CARSSRS2$AdminPinRegisterControllerTest.ic" NAME="AdminPinRegisterControllerTest Coverage Results" MODIFIED="1592692936813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/CARSSRS2$RegistrationControllerTest.ic" NAME="RegistrationControllerTest Coverage Results" MODIFIED="1592684370742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>controllers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CARSSRS2$UserServiceTest.exec" NAME="UserServiceTest Coverage Results" MODIFIED="1592694836992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/VARIANTA_SI_MAI_BUNA_CU_CODECOVRIGI$AdminPinRegisterControllerTest_and_6_more.ic" NAME="AdminPinRegisterControllerTest and 6 more Coverage Results" MODIFIED="1592697618718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CARSSRS2$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1592690923076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>services.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CARSSRS2$AdminPinRegisterControllerTest_and_1_more.ic" NAME="AdminPinRegisterControllerTest and 1 more Coverage Results" MODIFIED="1592695452628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CARSSRS2$UserServiceTest_and_1_more.ic" NAME="UserServiceTest and 1 more Coverage Results" MODIFIED="1592695626366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
